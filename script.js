@@ -47,6 +47,29 @@ const translations = {
                 </a>
             </div>
         `,
+        "fr": `
+            <img src="fotocv1.jpeg" alt="Your picture" class="card-img">
+            <h1 class="card-name">Bonjour! Je suis Domingo.</h1>
+            <h2 class="card-role">Ingénieur Informatique</h2>
+            <p class="card-desc">Je suis Domingo, un technologue passionné d'Espagne, vivant actuellement à Genève, en Suisse. Mon objectif professionnel est de travailler sur l'infrastructure, les systèmes et DevOps, où j'utilise mon expertise pour développer des solutions efficaces et robustes. Je suis motivé par les possibilités sans fin de la technologie et son potentiel pour impulser un changement significatif. Ravi de vous rencontrer!</p>
+            <div class="card-links">
+                <a href="domingorb_cv.pdf" title="CV" target="_blank">
+                    <i class="fas fa-file-alt link-icon"></i>
+                </a>
+                <a href="mailto:domingorb@proton.me" title="Email">
+                    <i class="fas fa-envelope link-icon"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/domingoriverabarros/" title="Linkedin" target="_blank">
+                    <i class="fab fa-linkedin link-icon"></i>
+                </a>
+                <a href="https://github.com/dominrivera" title="Github" target="_blank">
+                    <i class="fab fa-github link-icon"></i>
+                </a>
+                <a href="https://gitlab.cern.ch/driverab" title="Gitlab" target="_blank">
+                    <i class="fab fa-gitlab link-icon"></i>
+                </a>
+            </div>
+        `,
     },
     "experience": {
         "en": `
@@ -83,7 +106,67 @@ const translations = {
         `,
         "es": `
             <h2>Experiencia</h2>
-            <p class="card-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+            <div class="experience-entry">
+                <h3>Ingeniero DevOps Senior</h3>
+                <h4>Compañía XYZ, Ginebra - Ene 2021 hasta la fecha</h4>
+                <ul class="achievements-list">
+                    <li>Lideré un equipo para implementar tuberías de CI/CD, reduciendo los tiempos de despliegue en un 30%.</li>
+                    <li>Implementé estrategias de pruebas automatizadas, mejorando la fiabilidad del software en un 25%.</li>
+                    <li>Reducí los costos de infraestructura en la nube en un 20% mediante el uso eficiente de los recursos.</li>
+                </ul>
+            </div>
+
+            <div class="experience-entry">
+                <h3>Administrador de Sistemas</h3>
+                <h4>Corporación ABC, Ginebra - Ene 2019 a Dic 2020</h4>
+                <ul class="achievements-list">
+                    <li>Gestioné y mantuve un entorno de servidor Linux a gran escala, asegurando un tiempo de actividad del 99.99%.</li>
+                    <li>Implementé una solución de monitoreo del sistema que redujo el tiempo de inactividad del sistema en un 15%.</li>
+                    <li>Automatizé tareas rutinarias utilizando scripts de shell, ahorrando aproximadamente 10 horas de trabajo manual por semana.</li>
+                </ul>
+            </div>
+
+            <div class="experience-entry">
+                <h3>Ingeniero DevOps Junior</h3>
+                <h4>Software DEF, Madrid - Ene 2017 a Dic 2018</h4>
+                <ul class="achievements-list">
+                    <li>Asistí en el despliegue de aplicaciones en el entorno AWS.</li>
+                    <li>Desarrollé scripts para la construcción, despliegue, mantenimiento y tareas relacionadas.</li>
+                    <li>Ayudé en la implementación de principios y prácticas DevOps, reduciendo los fallos de despliegue en un 20%.</li>
+                </ul>
+            </div>
+        `,
+        "fr": `
+            <h2>Expérience</h2>
+            <div class="experience-entry">
+                <h3>Ingénieur DevOps Senior</h3>
+                <h4>Société XYZ, Genève - Jan 2021 jusqu'à maintenant</h4>
+                <ul class="achievements-list">
+                    <li>J'ai dirigé une équipe pour mettre en œuvre des pipelines CI/CD, réduisant les temps de déploiement de 30%.</li>
+                    <li>J'ai mis en œuvre des stratégies de test automatisées, améliorant la fiabilité du logiciel de 25%.</li>
+                    <li>J'ai réduit les coûts d'infrastructure cloud de 20% grâce à une utilisation efficace des ressources.</li>
+                </ul>
+            </div>
+        
+            <div class="experience-entry">
+                <h3>Administrateur Systèmes</h3>
+                <h4>Corporation ABC, Genève - Jan 2019 à Déc 2020</h4>
+                <ul class="achievements-list">
+                    <li>J'ai géré et maintenu un environnement serveur Linux à grande échelle, assurant une disponibilité de 99,99%.</li>
+                    <li>J'ai mis en place une solution de surveillance des systèmes qui a réduit les temps d'arrêt du système de 15%.</li>
+                    <li>J'ai automatisé des tâches routinières en utilisant des scripts shell, économisant environ 10 heures de travail manuel par semaine.</li>
+                </ul>
+            </div>
+        
+            <div class="experience-entry">
+                <h3>Ingénieur DevOps Junior</h3>
+                <h4>DEF Software, Madrid - Jan 2017 à Déc 2018</h4>
+                <ul class="achievements-list">
+                    <li>J'ai aidé à déployer des applications dans l'environnement AWS.</li>
+                    <li>J'ai développé des scripts pour la construction, le déploiement, la maintenance et d'autres tâches connexes.</li>
+                    <li>J'ai aidé à mettre en œuvre les principes et les pratiques DevOps, réduisant les échecs de déploiement de 20%.</li>
+                </ul>
+            </div>
         `,
     },
     "technologies": {
@@ -105,7 +188,7 @@ const translations = {
                     <li>PHP</li>
                     <li>SQL</li>
                 </ul>
-            </div> 
+            </div>
         `,
         "es": `
             <h2>Tecnologias</h2>
@@ -125,7 +208,27 @@ const translations = {
                     <li>PHP</li>
                     <li>SQL</li>
                 </ul>
-            </div> 
+            </div>
+        `,
+        "fr": `
+            <h2>Technologies</h2>
+            <div id="tech-content">
+                <ul class="tech-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>Angular</li>
+                    <li>Ruby</li>
+                    <li>Swift</li>
+                    <li>C#</li>
+                    <li>PHP</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
         `,
     },
     "education": {
@@ -136,39 +239,36 @@ const translations = {
         "es": `
             <h2>Educacion</h2>
             <p>Pronto disponible...</p>
-        `
+        `,
+        "fr": `
+            <h2>Éducation</h2>
+            <p>Bientôt disponible...</p>
+        `,
     }
     // Add other sections here...
 };
 
-// Current language
-let currentLanguage = "en";
-let currentSection = 'personal';
-
-function changeContent(section) {
-    currentSection = section;
-    var cardContent = document.getElementById('card-content');
-    cardContent.innerHTML = translations[section][currentLanguage] || "Section not found";
+let currentLanguage = 'en';
+const flagImages = {
+    'en': 'uk.png',
+    'es': 'es.png',
+    'fr': 'fr.png'
 }
 
 function toggleLanguage() {
-    const flag = document.getElementById('flag');
-
-    if (currentLanguage === 'en') {
-        currentLanguage = 'es';
-        flag.src = 'uk.png';
-        flag.alt = 'UK Flag';
-    } else {
-        currentLanguage = 'en';
-        flag.src = 'es.png';
-        flag.alt = 'ES Flag';
-    }
-
-    changeContent(currentSection); // Refresh the content according to the new language
+    currentLanguage = (currentLanguage === 'en') ? 'es' : ((currentLanguage === 'es') ? 'fr' : 'en');
+    document.querySelector('#card-content').innerHTML = translations[currentContent][currentLanguage];
+    document.querySelector('#lang-flag').src = flagImages[currentLanguage === 'en' ? 'es' : currentLanguage === 'es' ? 'fr' : 'en'];
 }
 
+// Initially
+let currentContent = 'personal';
+document.querySelector('#card-content').innerHTML = translations[currentContent][currentLanguage];
 
-window.onload = function() {
-    changeContent('personal'); // Load the "personal" section by default
-};
+// Other functions...
+
+function changeContent(contentType) {
+    currentContent = contentType;
+    document.querySelector('#card-content').innerHTML = translations[currentContent][currentLanguage];
+}
 
