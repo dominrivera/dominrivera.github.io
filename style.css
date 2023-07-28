@@ -1,0 +1,167 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #65a6c0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 570px; /* 450px (card) + 100px (sidebar) + 20px (margin-right of sidebar) */
+}
+
+.sidebar {
+    width: 50px; /* Specify width of the sidebar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    color: #82acda;
+}
+
+/*
+.sidebar i:hover {
+    color: #d4dfeb;
+}
+*/
+
+.card {
+    width: 450px; /* Specify width of the card */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+/* the hover moves the card when the cursor is over it
+.card:hover {
+    transform: translateY(-10px);
+}
+*/
+
+/* New class for the main content area */
+.card-main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-item {
+    font-size: 30px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: .3s;
+}
+
+.menu-item:hover {
+    color: #0056b3;
+}
+
+/* New class for the dynamic content area */
+#card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items vertically within the content area */
+    justify-content: center; /* Center items horizontally within the content area */
+}
+
+.card-img {
+    width: 225px;
+    height: 225px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #c0c0c0; /* Adds a border to the image */
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); /* Adds a shadow to the image */
+}
+
+.card-name {
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+    color: #333333;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 20px; /* Adds some margin to the bottom */
+}
+
+.card-name i {
+    margin-left: 10px;
+    color: #506e8f;
+}
+
+.card-desc {
+    font-size: 18px;
+    color: #666666;
+    margin-top: 10px;
+    text-align: justify;
+    padding: 0 20px; /* Adds some padding to the sides */
+}
+
+.card-links {
+    margin-top: 30px;
+    display: flex; /* Makes the icons line up horizontally */
+    justify-content: center; /* Centers the icons */
+}
+
+.card-links a {
+    display: inline-block;
+    margin: 0 15px;
+    color: #82acda;
+    text-decoration: none;
+}
+
+.link-icon {
+    font-size: 23px;
+    transition: .3s;
+}
+
+.link-icon:hover {
+    color: #0056b3;
+}
+
+
+#tech-content h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.tech-list {
+    column-count: 3;
+    column-gap: 30px;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    width: 100%;
+}
+
+.tech-list li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #dae2dc;
+    border-radius: 4px;
+    color: #333333;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.tech-list li:hover {
+    transform: translateX(10px);
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+
