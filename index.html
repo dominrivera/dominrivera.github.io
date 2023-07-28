@@ -9,19 +9,21 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="sidebar">
-        <i class="fas fa-info-circle menu-item" onclick="changeContent('personal')" title="Personal Information"></i>
-        <i class="fas fa-briefcase menu-item" onclick="changeContent('experience')" title="Experience"></i>
-        <i class="fas fa-laptop-code menu-item" onclick="changeContent('technologies')" title="Technologies"></i>
-        <i class="fas fa-graduation-cap menu-item" onclick="changeContent('education')" title="Education"></i>
-        <div id="languageToggle" class="language-toggle">
-            <img id="lang-flag" src="es.png" alt="ES Flag" onclick="toggleLanguage()">
-        </div>           
-    </div>
-    <div class="card">
-        <div class="card-main-content">
-            <div id="card-content">
-                <!-- Card content will be inserted here by the script.js file -->
+    <div class="container">
+        <div class="sidebar">
+            <i class="fas fa-info-circle menu-item" onclick="changeContent('personal')" title="Personal Information"></i>
+            <i class="fas fa-briefcase menu-item" onclick="changeContent('experience')" title="Experience"></i>
+            <i class="fas fa-laptop-code menu-item" onclick="changeContent('technologies')" title="Technologies"></i>
+            <i class="fas fa-graduation-cap menu-item" onclick="changeContent('education')" title="Education"></i>
+            <div id="languageToggle" class="language-toggle">
+                <img id="lang-flag" src="es.png" alt="ES Flag" onclick="toggleLanguage()">
+            </div>           
+        </div>
+        <div class="card">
+            <div class="card-main-content">
+                <div id="card-content">
+                    <!-- Card content will be inserted here by the script.js file -->
+                </div>
             </div>
         </div>
     </div>

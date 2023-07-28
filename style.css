@@ -8,13 +8,37 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.section-title {
+    font-size: 28px;
+    color: #333333;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 3px;
+    width: 50px;
+    background: #82acda;
+}
+
 .container {
     display: flex;
-    width: 570px; /* 450px (card) + 100px (sidebar) + 20px (margin-right of sidebar) */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* The container will take the full viewport height */
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .sidebar {
-    width: 50px; /* Specify width of the sidebar */
+    width: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,29 +50,43 @@ body {
     color: #82acda;
 }
 
-
 .sidebar i:hover {
     color: #3d434b;
 }
 
-
 .card {
-    width: 450px; /* Specify width of the card */
+    width: 500px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start; /* Align to the top of the card */
     align-items: center;
     padding: 30px;
     background-color: #ffffff;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
+    margin: 20px auto; /* Add vertical margins */
+    overflow-y: auto; /* Add scroll when the content overflows */
+    max-height: calc(100vh - 100px); /* Set the maximum height */
 }
 
-/* the hover moves the card when the cursor is over it
-.card:hover {
-    transform: translateY(-10px);
+/* This will change the scrollbar within the card */
+.card::-webkit-scrollbar {
+    width: 10px; /* Adjust width of scrollbar here */
 }
-*/
+
+.card::-webkit-scrollbar-track {
+    border-radius: 10px; /* Makes the track of the scrollbar rounded */
+    background: #f1f1f1; /* Adjust the color of the track here */
+}
+
+.card::-webkit-scrollbar-thumb {
+    background: #888; /* Adjust the color of the thumb (the part that moves) here */
+    border-radius: 10px; /* Makes the thumb of the scrollbar rounded */
+}
+
+.card::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Changes the color of thumb when hovered */
+}
 
 /* New class for the main content area */
 .card-main-content {
@@ -98,17 +136,6 @@ body {
     text-align: center;
     margin-bottom: 5px; /* Adds some margin to the bottom */
 }
-/*
-.card-role {
-    margin: 0;
-    font-size: 20px;
-    font-style: italic;
-    color: #5f5f5f;
-    background-color: #ffffff;
-    border-radius: 15px;
-    text-align: center;
-    margin-bottom: 20px;
-}*/
 
 .card-role {
     margin-top: 10px;
@@ -158,14 +185,16 @@ body {
 
 
 #tech-content h3 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #333;
+    text-transform: uppercase;
 }
 
 .tech-list {
-    column-count: 3;
-    column-gap: 30px;
+    column-count: 4;
+    column-gap: 20px;
     padding: 0;
     list-style-type: none;
     text-align: center;
@@ -174,18 +203,22 @@ body {
 
 .tech-list li {
     padding: 10px;
-    margin-bottom: 10px;
-    background-color: #dae2dc;
-    border-radius: 4px;
+    margin-bottom: 15px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
     color: #333333;
-    font-size: 18px;
-    transition: 0.3s;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
 }
 
 .tech-list li:hover {
-    transform: translateX(10px);
-    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    border-color: #bbb;
 }
+
 
 .language-toggle {
     margin-top: auto;
@@ -199,28 +232,108 @@ body {
     max-height: 100%;
 }
 
-.experience-entry {
-    margin-bottom: 5px;
+/* Experience Section */
+
+.experience-title {
+    cursor: pointer;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
 }
-  
+
+.experience-title:hover {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    transform: translateY(-5px);
+}
+
+.experience-entry {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+/*
+.experience-entry:hover {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+*/
+
 .experience-entry h3 {
-  font-size: 20px;
-  color: #333333;
-  /*margin-bottom: 5px;*/
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
 }
 
 .experience-entry h4 {
-  font-size: 16px;
-  color: #666666;
-  margin-bottom: 10px;
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 15px;
 }
 
+
 .achievements-list {
-  list-style-type: disc;
-  padding-left: 20px;
+    color: #555;
+    line-height: 1.6;
+    list-style-type: disc;
+    padding-left: 20px;
 }
-  
+
 .achievements-list li {
-  margin-bottom: 7px;
+    margin-bottom: 10px;
 }
-  
+
+.achievements-list-container {
+    display: none;
+}
+
+/* Education Section */
+.content-section {
+    padding: 20px 0;
+}
+
+.content-section h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.education-entry {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.education-entry h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.education-entry h4 {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.education-entry p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.education-entry a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.education-entry a:hover {
+    text-decoration: underline;
+}

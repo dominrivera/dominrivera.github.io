@@ -27,7 +27,7 @@ const translations = {
         "es": `
             <img src="fotocv1.jpeg" alt="Your picture" class="card-img">
             <h1 class="card-name">Hola! Soy Domingo.</h1>
-            <h2 class="card-role">Ingeniero Informatico</h2>
+            <h2 class="card-role">Ingeniero Informático</h2>
             <p class="card-desc">Soy Domingo, un español apasionado por la tecnología, actualmente viviendo en la ciudad de Ginebra, Suiza. Mi enfoque profesional está en la infraestructura, los sistemas y DevOps, donde utilizo mi experiencia para desarrollar soluciones eficientes y robustas. Me motiva las infinitas posibilidades de la tecnología y su potencial para impulsar cambios significativos. ¡Encantado de conocerte!</p>
             <div class="card-links">
                 <a href="domingorb_cv.pdf" title="Curriculum" target="_blank">
@@ -73,176 +73,220 @@ const translations = {
     },
     "experience": {
         "en": `
-            <h2>Experience</h2>
+            <h2 class="section-title">Experience</h2>
             <div class="experience-entry">
-                <h3>Senior DevOps Engineer</h3>
-                <h4>XYZ Company, Geneva - Jan 2021 to Present</h4>
-                <ul class="achievements-list">
+                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)">
+                    <h3>Senior DevOps Engineer</h3>
+                    <h4>XYZ Company, Geneva - Jan 2021 to Present</h4>
+                </div>
+                <ul class="achievements-list" style="display: none;">
                     <li>Led a team to implement CI/CD pipelines, reducing deployment times by 30%.</li>
                     <li>Implemented automated testing strategies, improving software reliability by 25%.</li>
                     <li>Reduced cloud infrastructure costs by 20% through efficient resource utilization.</li>
                 </ul>
             </div>
-        
             <div class="experience-entry">
-                <h3>Systems Administrator</h3>
-                <h4>ABC Corporation, Geneva - Jan 2019 to Dec 2020</h4>
-                <ul class="achievements-list">
+                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)">
+                    <h3>Systems Administrator</h3>
+                    <h4>ABC Corporation, Geneva - Jan 2019 to Dec 2020</h4>
+                </div>
+                <ul class="achievements-list" style="display: none;">
                     <li>Managed and maintained a large-scale Linux server environment, ensuring 99.99% uptime.</li>
                     <li>Implemented a system monitoring solution which reduced system downtime by 15%.</li>
                     <li>Automated routine tasks using shell scripting, saving approximately 10 hours of manual work per week.</li>
                 </ul>
             </div>
-        
             <div class="experience-entry">
-                <h3>Junior DevOps Engineer</h3>
-                <h4>DEF Software, Madrid - Jan 2017 to Dec 2018</h4>
-                <ul class="achievements-list">
-                    <li>Assisted in the deployment of applications in AWS environment.</li>
-                    <li>Developed scripts for build, deployment, maintenance, and related tasks.</li>
-                    <li>Helped in implementing DevOps principles and practices, reducing deployment failures by 20%.</li>
+                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)">
+                    <h3>Systems Administrator</h3>
+                    <h4>ABC Corporation, Geneva - Jan 2019 to Dec 2020</h4>
+                </div>
+                <ul class="achievements-list" style="display: none;">
+                    <li>Managed and maintained a large-scale Linux server environment, ensuring 99.99% uptime.</li>
+                    <li>Implemented a system monitoring solution which reduced system downtime by 15%.</li>
+                    <li>Automated routine tasks using shell scripting, saving approximately 10 hours of manual work per week.</li>
                 </ul>
             </div>
         `,
         "es": `
-            <h2>Experiencia</h2>
+            <h2 class="section-title">Experiencia</h2>
             <div class="experience-entry">
-                <h3>Ingeniero DevOps Senior</h3>
-                <h4>Compañía XYZ, Ginebra - Ene 2021 hasta la fecha</h4>
-                <ul class="achievements-list">
-                    <li>Lideré un equipo para implementar tuberías de CI/CD, reduciendo los tiempos de despliegue en un 30%.</li>
-                    <li>Implementé estrategias de pruebas automatizadas, mejorando la fiabilidad del software en un 25%.</li>
-                    <li>Reducí los costos de infraestructura en la nube en un 20% mediante el uso eficiente de los recursos.</li>
+                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)">
+                    <h3>Ingeniero DevOps Senior</h3>
+                    <h4>XYZ Company, Ginebra - Ene 2021 hasta la fecha</h4>
+                </div>
+                <ul class="achievements-list" style="display: none;">
+                    <li>Lideró un equipo para implementar pipelines de CI/CD, reduciendo los tiempos de implementación en un 30%.</li>
+                    <li>Implementó estrategias de testing automatizadas, mejorando la fiabilidad del software en un 25%.</li>
+                    <li>Redujo los costos de infraestructura en la nube en un 20% a través de una utilización eficiente de los recursos.</li>
                 </ul>
             </div>
-
             <div class="experience-entry">
-                <h3>Administrador de Sistemas</h3>
-                <h4>Corporación ABC, Ginebra - Ene 2019 a Dic 2020</h4>
-                <ul class="achievements-list">
-                    <li>Gestioné y mantuve un entorno de servidor Linux a gran escala, asegurando un tiempo de actividad del 99.99%.</li>
-                    <li>Implementé una solución de monitoreo del sistema que redujo el tiempo de inactividad del sistema en un 15%.</li>
-                    <li>Automatizé tareas rutinarias utilizando scripts de shell, ahorrando aproximadamente 10 horas de trabajo manual por semana.</li>
-                </ul>
-            </div>
-
-            <div class="experience-entry">
-                <h3>Ingeniero DevOps Junior</h3>
-                <h4>Software DEF, Madrid - Ene 2017 a Dic 2018</h4>
-                <ul class="achievements-list">
-                    <li>Asistí en el despliegue de aplicaciones en el entorno AWS.</li>
-                    <li>Desarrollé scripts para la construcción, despliegue, mantenimiento y tareas relacionadas.</li>
-                    <li>Ayudé en la implementación de principios y prácticas DevOps, reduciendo los fallos de despliegue en un 20%.</li>
+                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)">
+                    <h3>Administrador de Sistemas</h3>
+                    <h4>ABC Corporation, Ginebra - Ene 2019 a Dic 2020</h4>
+                </div>
+                <ul class="achievements-list" style="display: none;">
+                    <li>Administró y mantuvo un entorno de servidores Linux a gran escala, asegurando un tiempo de actividad del 99.99%.</li>
+                    <li>Implementó una solución de monitorización de sistemas que redujo el tiempo de inactividad del sistema en un 15%.</li>
+                    <li>Automatizó tareas rutinarias usando scripts de shell, ahorrando aproximadamente 10 horas de trabajo manual por semana.</li>
                 </ul>
             </div>
         `,
         "fr": `
-            <h2>Expérience</h2>
+            <h2 class="section-title">Expérience</h2>
             <div class="experience-entry">
-                <h3>Ingénieur DevOps Senior</h3>
-                <h4>Société XYZ, Genève - Jan 2021 jusqu'à maintenant</h4>
-                <ul class="achievements-list">
-                    <li>J'ai dirigé une équipe pour mettre en œuvre des pipelines CI/CD, réduisant les temps de déploiement de 30%.</li>
-                    <li>J'ai mis en œuvre des stratégies de test automatisées, améliorant la fiabilité du logiciel de 25%.</li>
-                    <li>J'ai réduit les coûts d'infrastructure cloud de 20% grâce à une utilisation efficace des ressources.</li>
+                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)">
+                    <h3>Ingénieur DevOps Senior</h3>
+                    <h4>XYZ Company, Genève - Jan 2021 à aujourd'hui</h4>
+                </div>
+                <ul class="achievements-list" style="display: none;">
+                    <li>A dirigé une équipe pour mettre en œuvre des pipelines CI/CD, réduisant les temps de déploiement de 30%.</li>
+                    <li>A mis en place des stratégies de test automatisées, améliorant la fiabilité du logiciel de 25%.</li>
+                    <li>A réduit les coûts d'infrastructure cloud de 20% grâce à une utilisation efficace des ressources.</li>
                 </ul>
             </div>
-        
             <div class="experience-entry">
-                <h3>Administrateur Systèmes</h3>
-                <h4>Corporation ABC, Genève - Jan 2019 à Déc 2020</h4>
-                <ul class="achievements-list">
-                    <li>J'ai géré et maintenu un environnement serveur Linux à grande échelle, assurant une disponibilité de 99,99%.</li>
-                    <li>J'ai mis en place une solution de surveillance des systèmes qui a réduit les temps d'arrêt du système de 15%.</li>
-                    <li>J'ai automatisé des tâches routinières en utilisant des scripts shell, économisant environ 10 heures de travail manuel par semaine.</li>
-                </ul>
-            </div>
-        
-            <div class="experience-entry">
-                <h3>Ingénieur DevOps Junior</h3>
-                <h4>DEF Software, Madrid - Jan 2017 à Déc 2018</h4>
-                <ul class="achievements-list">
-                    <li>J'ai aidé à déployer des applications dans l'environnement AWS.</li>
-                    <li>J'ai développé des scripts pour la construction, le déploiement, la maintenance et d'autres tâches connexes.</li>
-                    <li>J'ai aidé à mettre en œuvre les principes et les pratiques DevOps, réduisant les échecs de déploiement de 20%.</li>
+                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)">
+                    <h3>Administrateur Systèmes</h3>
+                    <h4>ABC Corporation, Genève - Jan 2019 à Déc 2020</h4>
+                </div>
+                <ul class="achievements-list" style="display: none;">
+                    <li>A géré et maintenu un environnement de serveurs Linux à grande échelle, garantissant une disponibilité de 99,99%.</li>
+                    <li>A mis en place une solution de surveillance des systèmes qui a réduit le temps d'arrêt du système de 15%.</li>
+                    <li>A automatisé des tâches routinières à l'aide de scripts shell, économisant environ 10 heures de travail manuel par semaine.</li>
                 </ul>
             </div>
         `,
     },
     "technologies": {
         "en": `
-            <h2>Technologies</h2>
+            <h2 class="section-title">Technologies</h2>
             <div id="tech-content">
                 <ul class="tech-list">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
+                    <li>OpenStack</li>
                     <li>Python</li>
-                    <li>Java</li>
-                    <li>React</li>
-                    <li>Node.js</li>
-                    <li>Angular</li>
-                    <li>Ruby</li>
-                    <li>Swift</li>
-                    <li>C#</li>
-                    <li>PHP</li>
-                    <li>SQL</li>
+                    <li>Bash</li>
+                    <li>Puppet</li>
+                    <li>Rundeck</li>
+                    <li>InfluxDB</li>
+                    <li>Grafana</li>
+                    <li>Filebeat</li>
+                    <li>Logstash</li>
+                    <li>Nomad</li>
+                    <li>Docker</li>
+                    <li>Kubernetes</li>
+                    <li>Ansible</li>
+                    <li>Prometheus</li>
+                    <li>Git</li>
+                    <li>GitLab</li>
+                    <li>Github</li>
+                    <li>CI/CD</li>
+                    <li>Linux</li>
+                    <li>Jira</li>
                 </ul>
             </div>
         `,
         "es": `
-            <h2>Tecnologias</h2>
+            <h2 class="section-title">Tecnologias</h2>
             <div id="tech-content">
                 <ul class="tech-list">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
+                    <li>OpenStack</li>
                     <li>Python</li>
-                    <li>Java</li>
-                    <li>React</li>
-                    <li>Node.js</li>
-                    <li>Angular</li>
-                    <li>Ruby</li>
-                    <li>Swift</li>
-                    <li>C#</li>
-                    <li>PHP</li>
-                    <li>SQL</li>
+                    <li>Bash</li>
+                    <li>Puppet</li>
+                    <li>Rundeck</li>
+                    <li>InfluxDB</li>
+                    <li>Grafana</li>
+                    <li>Filebeat</li>
+                    <li>Logstash</li>
+                    <li>Nomad</li>
+                    <li>Docker</li>
+                    <li>Kubernetes</li>
+                    <li>Ansible</li>
+                    <li>Prometheus</li>
+                    <li>Git</li>
+                    <li>GitLab</li>
+                    <li>Github</li>
+                    <li>CI/CD</li>
+                    <li>Linux</li>
+                    <li>Jira</li>
                 </ul>
             </div>
         `,
         "fr": `
-            <h2>Technologies</h2>
+            <h2 class="section-title">Technologies</h2>
             <div id="tech-content">
                 <ul class="tech-list">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
+                    <li>OpenStack</li>
                     <li>Python</li>
-                    <li>Java</li>
-                    <li>React</li>
-                    <li>Node.js</li>
-                    <li>Angular</li>
-                    <li>Ruby</li>
-                    <li>Swift</li>
-                    <li>C#</li>
-                    <li>PHP</li>
-                    <li>SQL</li>
+                    <li>Bash</li>
+                    <li>Puppet</li>
+                    <li>Rundeck</li>
+                    <li>InfluxDB</li>
+                    <li>Grafana</li>
+                    <li>Filebeat</li>
+                    <li>Logstash</li>
+                    <li>Nomad</li>
+                    <li>Docker</li>
+                    <li>Kubernetes</li>
+                    <li>Ansible</li>
+                    <li>Prometheus</li>
+                    <li>Git</li>
+                    <li>GitLab</li>
+                    <li>Github</li>
+                    <li>CI/CD</li>
+                    <li>Linux</li>
+                    <li>Jira</li>
                 </ul>
             </div>
         `,
     },
     "education": {
         "en": `
-            <h2>Education</h2>
-            <p>Coming soon...</p>
+            <h2 class="section-title">Education</h2>
+            <div id="education" class="content-section">
+                <div class="education-entry">
+                    <h3>B.S. in Computer Engineering</h3>
+                    <h4>University of Vigo, Spain - 2020</h4>
+                    <p class="thesis">Bachelor's thesis: <a href="https://github.com/dominrivera/ESEIMS" target="_blank">ESEI Monitoring System</a></p>
+                </div>
+            
+                <div class="education-entry">
+                    <h3>Erasmus Programme, Computer Engineering</h3>
+                    <h4>Bialystok University of Technology, Poland - 2016</h4>
+                </div>
+            </div>
         `,
         "es": `
-            <h2>Educacion</h2>
-            <p>Pronto disponible...</p>
+            <h2 class="section-title">Educación</h2>
+            <div id="education" class="content-section">
+                <div class="education-entry">
+                    <h3>Grado en Ingeniería Informática</h3>
+                    <h4>Universidad de Vigo, España - 2020</h4>
+                    <p class="thesis">Trabajo de fin de grado: <a href="https://github.com/dominrivera/ESEIMS" target="_blank">Sistema de Monitorización de la ESEI</a></p>
+                </div>
+            
+                <div class="education-entry">
+                    <h3>Programa Erasmus, Ingeniería Informática</h3>
+                    <h4>Bialystok University of Technology, Polonia - 2016</h4>
+                </div>
+            </div>
         `,
         "fr": `
-            <h2>Éducation</h2>
-            <p>Bientôt disponible...</p>
+            <h2 class="section-title">Éducation</h2>
+            <div id="education" class="content-section">
+                <div class="education-entry">
+                    <h3>Licence en Ingénierie Informatique</h3>
+                    <h4>Université de Vigo, Espagne - 2020</h4>
+                    <p class="thesis">Thèse de licence : <a href="https://github.com/dominrivera/ESEIMS" target="_blank">Système de Surveillance ESEI</a></p>
+                </div>
+            
+                <div class="education-entry">
+                    <h3>Programme Erasmus, Ingénierie Informatique</h3>
+                    <h4>Université de Technologie de Bialystok, Pologne - 2016</h4>
+                </div>
+            </div>
         `,
     }
     // Add other sections here...
@@ -272,3 +316,10 @@ function changeContent(contentType) {
     document.querySelector('#card-content').innerHTML = translations[currentContent][currentLanguage];
 }
 
+function toggleVisibility(element) {
+    if (element.style.display === "none") {
+        element.style.display = "block";
+    } else {
+        element.style.display = "none";
+    }
+}
