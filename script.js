@@ -250,7 +250,7 @@ const translations = {
 
 let currentLanguage = 'en';
 const flagImages = {
-    'en': 'uk.png',
+    'en': 'en.png',
     'es': 'es.png',
     'fr': 'fr.png'
 }
