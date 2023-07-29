@@ -354,16 +354,18 @@ const translations = {
 };
 
 let currentLanguage = 'en';
-const flagImages = {
-    'en': 'en.png',
-    'es': 'es.png',
-    'fr': 'fr.png'
-}
 
-function toggleLanguage() {
-    currentLanguage = (currentLanguage === 'en') ? 'es' : ((currentLanguage === 'es') ? 'fr' : 'en');
+function changeLanguage(lang) {
+    currentLanguage = lang;
     document.querySelector('#card-content').innerHTML = translations[currentContent][currentLanguage];
-    document.querySelector('#lang-flag').src = flagImages[currentLanguage === 'en' ? 'es' : currentLanguage === 'es' ? 'fr' : 'en'];
+    let flagElements = document.querySelectorAll('.lang-flag');
+    flagElements.forEach(element => {
+        if (element.alt.substring(0, 2).toLowerCase() === currentLanguage) {
+            element.style.opacity = '1';  // Highlight the selected language
+        } else {
+            element.style.opacity = '0.5';  // Dim the other languages
+        }
+    });
 }
 
 // Initially

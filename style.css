@@ -272,10 +272,16 @@ body {
 }
 
 .language-toggle {
-    margin-top: auto;
-    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.lang-flag {
     width: 30px;
-    height: 30px;
+    cursor: pointer;
 }
 
 .language-toggle img {
