@@ -11,13 +11,21 @@
 <body>
     <div class="container">
         <div class="sidebar">
-            <i class="fas fa-info-circle menu-item" onclick="changeContent('personal')" title="Personal Information"></i>
-            <i class="fas fa-briefcase menu-item" onclick="changeContent('experience')" title="Experience"></i>
-            <i class="fas fa-laptop-code menu-item" onclick="changeContent('technologies')" title="Technologies"></i>
-            <i class="fas fa-graduation-cap menu-item" onclick="changeContent('education')" title="Education"></i>
+            <div class="tooltip" data-title="Information">
+                <i class="fas fa-info-circle menu-item" onclick="changeContent('personal')"></i>
+            </div>
+            <div class="tooltip" data-title="Experience">
+                <i class="fas fa-briefcase menu-item" onclick="changeContent('experience')"></i>
+            </div>
+            <div class="tooltip" data-title="Technologies">
+                <i class="fas fa-laptop-code menu-item" onclick="changeContent('technologies')"></i>
+            </div>
+            <div class="tooltip" data-title="Education">
+                <i class="fas fa-graduation-cap menu-item" onclick="changeContent('education')"></i>
+            </div>
             <div id="languageToggle" class="language-toggle">
                 <img id="lang-flag" src="es.png" alt="ES Flag" onclick="toggleLanguage()">
-            </div>           
+            </div>
         </div>
         <div class="card">
             <div class="card-main-content">

@@ -50,8 +50,42 @@ body {
     color: #82acda;
 }
 
+.sidebar i {
+    cursor: pointer;
+}
+
 .sidebar i:hover {
     color: #3d434b;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.tooltip::before {
+    content: attr(data-title);
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-100%);
+    right: calc(100% + 10px);
+    background-color: #555;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Show the tooltip when hovering over the icon */
+.tooltip:hover::before {
+    visibility: visible;
+    opacity: 1;
 }
 
 .card {
@@ -168,15 +202,39 @@ body {
 }
 
 .card-links a {
-    display: inline-block;
+    position: relative;
+    text-decoration: none;
     margin: 0 15px;
     color: #82acda;
-    text-decoration: none;
 }
 
 .link-icon {
-    font-size: 23px;
-    transition: .3s;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+/* Tooltip container */
+.card-links a::after {
+    content: attr(data-title); /* This gets the text from the title attribute */
+    position: absolute;
+    top: -2.5em; /* Position the tooltip 2em above the link */
+    left: 50%;
+    transform: translateX(-50%); /* This centers the tooltip */
+    background-color: #555; /* Background color of the tooltip */
+    color: #fff; /* Text color of the tooltip */
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap; /* This stops the tooltip text from wrapping onto multiple lines */
+    visibility: hidden; /* Hide the tooltip by default */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Show the tooltip when hovering over the link */
+.card-links a:hover::after {
+    visibility: visible;
+    opacity: 1;
 }
 
 .link-icon:hover {
@@ -212,13 +270,6 @@ body {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     border: 1px solid #ddd;
 }
-
-.tech-list li:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-    border-color: #bbb;
-}
-
 
 .language-toggle {
     margin-top: auto;
@@ -258,12 +309,6 @@ body {
     box-sizing: border-box;
     transition: all 0.3s ease-in-out;
 }
-/*
-.experience-entry:hover {
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-    transform: translateY(-5px);
-}
-*/
 
 .experience-entry h3 {
     font-size: 22px;

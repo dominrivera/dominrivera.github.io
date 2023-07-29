@@ -7,19 +7,19 @@ const translations = {
             <h2 class="card-role">Computing Engineer</h2>
             <p class="card-desc">I'm Domingo, a passionate technologist from Spain, currently living in the city of Geneva, Switzerland. My professional focus is on infrastructure, systems, and DevOps, where I use my expertise to develop efficient and robust solutions. I'm driven by the endless possibilities of technology and its potential to drive meaningful change. Nice to meet you!</p>
             <div class="card-links">
-                <a href="domingorb_cv.pdf" title="Resume" target="_blank">
+                <a href="domingorb_cv.pdf" data-title="Resume" target="_blank">
                     <i class="fas fa-file-alt link-icon"></i>
                 </a>
-                <a href="mailto:domingorb@proton.me" title="Email">
+                <a href="mailto:domingorb@proton.me" data-title="Email">
                     <i class="fas fa-envelope link-icon"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/domingoriverabarros/" title="Linkedin" target="_blank">
+                <a href="https://www.linkedin.com/in/domingoriverabarros/" data-title="Linkedin" target="_blank">
                     <i class="fab fa-linkedin link-icon"></i>
                 </a>
-                <a href="https://github.com/dominrivera" title="Github" target="_blank">
+                <a href="https://github.com/dominrivera" data-title="Github" target="_blank">
                     <i class="fab fa-github link-icon"></i>
                 </a>
-                <a href="https://gitlab.cern.ch/driverab" title="Gitlab" target="_blank">
+                <a href="https://gitlab.cern.ch/driverab" data-title="Gitlab" target="_blank">
                     <i class="fab fa-gitlab link-icon"></i>
                 </a>
             </div>
@@ -30,19 +30,19 @@ const translations = {
             <h2 class="card-role">Ingeniero Informático</h2>
             <p class="card-desc">Soy Domingo, un español apasionado por la tecnología, actualmente viviendo en la ciudad de Ginebra, Suiza. Mi enfoque profesional está en la infraestructura, los sistemas y DevOps, donde utilizo mi experiencia para desarrollar soluciones eficientes y robustas. Me motiva las infinitas posibilidades de la tecnología y su potencial para impulsar cambios significativos. ¡Encantado de conocerte!</p>
             <div class="card-links">
-                <a href="domingorb_cv.pdf" title="Curriculum" target="_blank">
+                <a href="domingorb_cv.pdf" data-title="CV" target="_blank">
                     <i class="fas fa-file-alt link-icon"></i>
                 </a>
-                <a href="mailto:domingorb@proton.me" title="Email">
+                <a href="mailto:domingorb@proton.me" data-title="Email">
                     <i class="fas fa-envelope link-icon"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/domingoriverabarros/" title="Linkedin" target="_blank">
+                <a href="https://www.linkedin.com/in/domingoriverabarros/" data-title="Linkedin" target="_blank">
                     <i class="fab fa-linkedin link-icon"></i>
                 </a>
-                <a href="https://github.com/dominrivera" title="Github" target="_blank">
+                <a href="https://github.com/dominrivera" data-title="Github" target="_blank">
                     <i class="fab fa-github link-icon"></i>
                 </a>
-                <a href="https://gitlab.cern.ch/driverab" title="Gitlab" target="_blank">
+                <a href="https://gitlab.cern.ch/driverab" data-title="Gitlab" target="_blank">
                     <i class="fab fa-gitlab link-icon"></i>
                 </a>
             </div>
@@ -53,19 +53,19 @@ const translations = {
             <h2 class="card-role">Ingénieur Informatique</h2>
             <p class="card-desc">Je suis Domingo, un technologue passionné d'Espagne, vivant actuellement à Genève, en Suisse. Mon objectif professionnel est de travailler sur l'infrastructure, les systèmes et DevOps, où j'utilise mon expertise pour développer des solutions efficaces et robustes. Je suis motivé par les possibilités sans fin de la technologie et son potentiel pour impulser un changement significatif. Ravi de vous rencontrer!</p>
             <div class="card-links">
-                <a href="domingorb_cv.pdf" title="CV" target="_blank">
+                <a href="domingorb_cv.pdf" data-title="CV" target="_blank">
                     <i class="fas fa-file-alt link-icon"></i>
                 </a>
-                <a href="mailto:domingorb@proton.me" title="Email">
+                <a href="mailto:domingorb@proton.me" data-title="Email">
                     <i class="fas fa-envelope link-icon"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/domingoriverabarros/" title="Linkedin" target="_blank">
+                <a href="https://www.linkedin.com/in/domingoriverabarros/" data-title="Linkedin" target="_blank">
                     <i class="fab fa-linkedin link-icon"></i>
                 </a>
-                <a href="https://github.com/dominrivera" title="Github" target="_blank">
+                <a href="https://github.com/dominrivera" data-title="Github" target="_blank">
                     <i class="fab fa-github link-icon"></i>
                 </a>
-                <a href="https://gitlab.cern.ch/driverab" title="Gitlab" target="_blank">
+                <a href="https://gitlab.cern.ch/driverab" data-title="Gitlab" target="_blank">
                     <i class="fab fa-gitlab link-icon"></i>
                 </a>
             </div>
@@ -76,35 +76,48 @@ const translations = {
             <h2 class="section-title">Experience</h2>
             <div class="experience-entry">
                 <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)">
-                    <h3>Senior DevOps Engineer</h3>
-                    <h4>XYZ Company, Geneva - Jan 2021 to Present</h4>
+                    <h3>Cloud Infrastructure Engineer</h3>
+                    <h4>CERN - Cloud Infrastructure team, Switzerland - September 2021 to Present</h4>
                 </div>
                 <ul class="achievements-list" style="display: none;">
-                    <li>Led a team to implement CI/CD pipelines, reducing deployment times by 30%.</li>
-                    <li>Implemented automated testing strategies, improving software reliability by 25%.</li>
-                    <li>Reduced cloud infrastructure costs by 20% through efficient resource utilization.</li>
+                    <p><strong>Tech Stack:</strong> OpenStack, Linux, Python, Bash, Puppet, MySQL, InfluxDB, Prometheus, Grafana, Rundeck, CI/CD</p>
+                    <li>Responsible for monitoring the Cloud Service, ensuring high availability and performance through proactive monitoring.</li>
+                    <li>Developed and maintained automation tools for the Cloud Service, streamlining operations and improving efficiency.</li>
+                    <li>Played a key role in configuring, managing, and continuously improving CERN's Cloud Service infrastructure (OpenStack).</li>
+                    <li>Managed and maintained the CERN OpenStack web application, ensuring its availability and performance for thousands of users.</li>
+                    <li>Member of the Cloud Service support team in charge of addressing user incidents and requests, providing solutions and support for a large-scale infrastructure that serves thousands of users. This infrastructure includes nearly 10,000 physical servers, 13,000 virtual machines, and almost half a million cores.</li>
                 </ul>
             </div>
             <div class="experience-entry">
                 <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)">
-                    <h3>Systems Administrator</h3>
-                    <h4>ABC Corporation, Geneva - Jan 2019 to Dec 2020</h4>
+                    <h3>DevOps Engineer/Infrastructure Engineer</h3>
+                    <h4>CERN - Infrastructure and Automation team (Databases Group), Switzerland - July 2018 to July 2021</h4>
                 </div>
                 <ul class="achievements-list" style="display: none;">
-                    <li>Managed and maintained a large-scale Linux server environment, ensuring 99.99% uptime.</li>
-                    <li>Implemented a system monitoring solution which reduced system downtime by 15%.</li>
-                    <li>Automated routine tasks using shell scripting, saving approximately 10 hours of manual work per week.</li>
+                    <p><strong>Tech Stack:</strong> Linux, Python, Puppet, Ansible, Nomad, Docker, Kubernetes, CI/CD, InfluxDB, Telegraf, Grafana, Filebeat, Logstash</p>
+                    <li>Contributed to the migration of several systems to a container-based infrastructure using Nomad and Kubernetes.</li>
+                    <li>Led the migration of hardware and application monitoring and alarming sensors to Collectd.</li>
+                    <li>Continuously improved the group's configuration elements using Puppet.</li>
+                    <li>Member of the support team in charge of the physical and virtual platform of the group.</li>
                 </ul>
             </div>
             <div class="experience-entry">
                 <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)">
-                    <h3>Systems Administrator</h3>
-                    <h4>ABC Corporation, Geneva - Jan 2019 to Dec 2020</h4>
+                    <h3>Web Developer - Internship</h3>
+                    <h4>Conexiona Telecom, Spain - February 2018 to May 2018</h4>
                 </div>
                 <ul class="achievements-list" style="display: none;">
-                    <li>Managed and maintained a large-scale Linux server environment, ensuring 99.99% uptime.</li>
-                    <li>Implemented a system monitoring solution which reduced system downtime by 15%.</li>
-                    <li>Automated routine tasks using shell scripting, saving approximately 10 hours of manual work per week.</li>
+                    <li>Developed the notifications system for the web application managing the company's financial records.</li>
+                </ul>
+            </div>
+            <div class="experience-entry">
+                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)">
+                    <h3>System Administrator - Internship</h3>
+                    <h4>University of Vigo, Spain - November 2017 to March 2018</h4>
+                </div>
+                <ul class="achievements-list" style="display: none;">
+                    <li>Provided support in managing the computing infrastructure of approximately 500 computers and peripherals.</li>
+                    <li>Covered hardware and software management, maintenance and troubleshooting.</li>
                 </ul>
             </div>
         `,
@@ -112,24 +125,48 @@ const translations = {
             <h2 class="section-title">Experiencia</h2>
             <div class="experience-entry">
                 <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)">
-                    <h3>Ingeniero DevOps Senior</h3>
-                    <h4>XYZ Company, Ginebra - Ene 2021 hasta la fecha</h4>
+                    <h3>Ingeniero de Infraestructura en la Nube</h3>
+                    <h4>CERN - Equipo de Infraestructura en la Nube, Suiza - Septiembre 2021 hasta Presente</h4>
                 </div>
                 <ul class="achievements-list" style="display: none;">
-                    <li>Lideró un equipo para implementar pipelines de CI/CD, reduciendo los tiempos de implementación en un 30%.</li>
-                    <li>Implementó estrategias de testing automatizadas, mejorando la fiabilidad del software en un 25%.</li>
-                    <li>Redujo los costos de infraestructura en la nube en un 20% a través de una utilización eficiente de los recursos.</li>
+                    <p><strong>Tecnologías usadas:</strong> OpenStack, Linux, Python, Bash, Puppet, MySQL, InfluxDB, Prometheus, Grafana, Rundeck, CI/CD</p>
+                    <li>Responsable de monitorear el Servicio en la Nube, asegurando alta disponibilidad y rendimiento a través del monitoreo proactivo.</li>
+                    <li>Desarrolló y mantuvo herramientas de automatización para el Servicio en la Nube, agilizando operaciones y mejorando la eficiencia.</li>
+                    <li>Jugó un papel clave en la configuración, gestión y mejora continua de la infraestructura del Servicio en la Nube de CERN (OpenStack).</li>
+                    <li>Gestionó y mantuvo la aplicación web OpenStack de CERN, asegurando su disponibilidad y rendimiento para miles de usuarios.</li>
+                    <li>Miembro del equipo de soporte del Servicio en la Nube encargado de atender incidentes y solicitudes de los usuarios, proporcionando soluciones y soporte para una infraestructura a gran escala que sirve a miles de usuarios. Esta infraestructura incluye casi 10,000 servidores físicos, 13,000 máquinas virtuales y casi medio millón de núcleos.</li>
                 </ul>
             </div>
             <div class="experience-entry">
                 <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)">
-                    <h3>Administrador de Sistemas</h3>
-                    <h4>ABC Corporation, Ginebra - Ene 2019 a Dic 2020</h4>
+                    <h3>Ingeniero DevOps/Ingeniero de Infraestructura</h3>
+                    <h4>CERN - Equipo de Infraestructura y Automatización (Grupo de Bases de Datos), Suiza - Julio 2018 hasta Julio 2021</h4>
                 </div>
                 <ul class="achievements-list" style="display: none;">
-                    <li>Administró y mantuvo un entorno de servidores Linux a gran escala, asegurando un tiempo de actividad del 99.99%.</li>
-                    <li>Implementó una solución de monitorización de sistemas que redujo el tiempo de inactividad del sistema en un 15%.</li>
-                    <li>Automatizó tareas rutinarias usando scripts de shell, ahorrando aproximadamente 10 horas de trabajo manual por semana.</li>
+                    <p><strong>Tecnologías usadas:</strong> Linux, Python, Puppet, Ansible, Nomad, Docker, Kubernetes, CI/CD, InfluxDB, Telegraf, Grafana, Filebeat, Logstash</p>
+                    <li>Contribuyó a la migración de varios sistemas a una infraestructura basada en contenedores usando Nomad y Kubernetes.</li>
+                    <li>Lideró la migración de sensores de monitoreo y alerta de hardware y aplicaciones a Collectd.</li>
+                    <li>Mejoró continuamente los elementos de configuración del grupo utilizando Puppet.</li>
+                    <li>Miembro del equipo de soporte a cargo de la plataforma física y virtual del grupo.</li>
+                </ul>
+            </div>
+            <div class="experience-entry">
+                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)">
+                    <h3>Desarrollador Web - Prácticas</h3>
+                    <h4>Conexiona Telecom, España - Febrero 2018 a Mayo 2018</h4>
+                </div>
+                <ul class="achievements-list" style="display: none;">
+                    <li>Desarrolló el sistema de notificaciones para la aplicación web que gestiona los registros financieros de la empresa.</li>
+                </ul>
+            </div>
+            <div class="experience-entry">
+                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)">
+                    <h3>Administrador de Sistemas - Prácticas</h3>
+                    <h4>Universidad de Vigo, España - Noviembre 2017 a Marzo 2018</h4>
+                </div>
+                <ul class="achievements-list" style="display: none;">
+                    <li>Proporcionó soporte en la gestión de la infraestructura informática de aproximadamente 500 ordenadores y periféricos.</li>
+                    <li>Cubrió la gestión, mantenimiento y resolución de problemas de hardware y software.</li>
                 </ul>
             </div>
         `,
@@ -137,24 +174,48 @@ const translations = {
             <h2 class="section-title">Expérience</h2>
             <div class="experience-entry">
                 <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)">
-                    <h3>Ingénieur DevOps Senior</h3>
-                    <h4>XYZ Company, Genève - Jan 2021 à aujourd'hui</h4>
+                    <h3>Ingénieur Infrastructure Cloud</h3>
+                    <h4>CERN - Équipe Infrastructure Cloud, Suisse - Septembre 2021 à aujourd'hui</h4>
                 </div>
                 <ul class="achievements-list" style="display: none;">
-                    <li>A dirigé une équipe pour mettre en œuvre des pipelines CI/CD, réduisant les temps de déploiement de 30%.</li>
-                    <li>A mis en place des stratégies de test automatisées, améliorant la fiabilité du logiciel de 25%.</li>
-                    <li>A réduit les coûts d'infrastructure cloud de 20% grâce à une utilisation efficace des ressources.</li>
+                    <p><strong>Technologies utilisées :</strong> OpenStack, Linux, Python, Bash, Puppet, MySQL, InfluxDB, Prometheus, Grafana, Rundeck, CI/CD</p>
+                    <li>Responsable de la surveillance du Service Cloud, assurant une haute disponibilité et des performances grâce à une surveillance proactive.</li>
+                    <li>Développé et maintenu des outils d'automatisation pour le Service Cloud, rationalisant les opérations et améliorant l'efficacité.</li>
+                    <li>A joué un rôle clé dans la configuration, la gestion et l'amélioration continue de l'infrastructure du Service Cloud du CERN (OpenStack).</li>
+                    <li>Géré et maintenu l'application web OpenStack du CERN, assurant sa disponibilité et ses performances pour des milliers d'utilisateurs.</li>
+                    <li>Membre de l'équipe de support du Service Cloud chargée de répondre aux incidents et demandes des utilisateurs, fournissant des solutions et du support pour une infrastructure à grande échelle qui sert des milliers d'utilisateurs. Cette infrastructure comprend près de 10 000 serveurs physiques, 13 000 machines virtuelles et près d'un demi-million de cœurs.</li>
                 </ul>
             </div>
             <div class="experience-entry">
                 <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)">
-                    <h3>Administrateur Systèmes</h3>
-                    <h4>ABC Corporation, Genève - Jan 2019 à Déc 2020</h4>
+                    <h3>Ingénieur DevOps/Ingénieur Infrastructure</h3>
+                    <h4>CERN - Équipe Infrastructure et Automatisation (Groupe de Bases de Données), Suisse - Juillet 2018 à Juillet 2021</h4>
                 </div>
                 <ul class="achievements-list" style="display: none;">
-                    <li>A géré et maintenu un environnement de serveurs Linux à grande échelle, garantissant une disponibilité de 99,99%.</li>
-                    <li>A mis en place une solution de surveillance des systèmes qui a réduit le temps d'arrêt du système de 15%.</li>
-                    <li>A automatisé des tâches routinières à l'aide de scripts shell, économisant environ 10 heures de travail manuel par semaine.</li>
+                    <p><strong>Technologies utilisées :</strong> Linux, Python, Puppet, Ansible, Nomad, Docker, Kubernetes, CI/CD, InfluxDB, Telegraf, Grafana, Filebeat, Logstash</p>
+                    <li>A contribué à la migration de plusieurs systèmes vers une infrastructure basée sur des conteneurs en utilisant Nomad et Kubernetes.</li>
+                    <li>A dirigé la migration des capteurs de surveillance et d'alerte matériel et application vers Collectd.</li>
+                    <li>A amélioré continuellement les éléments de configuration du groupe en utilisant Puppet.</li>
+                    <li>Membre de l'équipe de support en charge de la plateforme physique et virtuelle du groupe.</li>
+                </ul>
+            </div>
+            <div class="experience-entry">
+                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)">
+                    <h3>Développeur Web - Stage</h3>
+                    <h4>Conexiona Telecom, Espagne - Février 2018 à Mai 2018</h4>
+                </div>
+                <ul class="achievements-list" style="display: none;">
+                    <li>A développé le système de notifications pour l'application web qui gère les registres financiers de l'entreprise.</li>
+                </ul>
+            </div>
+            <div class="experience-entry">
+                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)">
+                    <h3>Administrateur Systèmes - Stage</h3>
+                    <h4>Université de Vigo, Espagne - Novembre 2017 à Mars 2018</h4>
+                </div>
+                <ul class="achievements-list" style="display: none;">
+                    <li>A apporté son soutien dans la gestion de l'infrastructure informatique d'environ 500 ordinateurs et périphériques.</li>
+                    <li>A couvert la gestion, la maintenance et le dépannage du matériel et des logiciels.</li>
                 </ul>
             </div>
         `,
