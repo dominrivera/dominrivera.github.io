@@ -386,3 +386,17 @@ function toggleVisibility(element) {
         element.style.display = "none";
     }
 }
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    var currentTime = new Date();
+    var hour = currentTime.getHours();
+    var body = document.body;
+
+    if(hour >= 8 && hour < 22){ // Change background color according to the hour
+        // Day time
+        body.style.backgroundColor = '#65a6c0';
+    } else {
+        // Night time
+        body.style.backgroundColor = '#28505f';
+    }
+});
