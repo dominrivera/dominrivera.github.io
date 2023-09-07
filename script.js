@@ -77,7 +77,7 @@ const translations = {
             <div class="experience-entry">
                 <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)">
                     <h3>Cloud Infrastructure Engineer</h3>
-                    <h4>CERN - Cloud Infrastructure team, Switzerland - September 2021 to Present</h4>
+                    <h4>CERN - Cloud Infrastructure team, Switzerland - September 2021 to September 2023</h4>
                 </div>
                 <ul class="achievements-list" style="display: none;">
                     <p><strong>Tech Stack:</strong> OpenStack, Linux, Python, Bash, Puppet, MySQL, InfluxDB, Prometheus, Grafana, Rundeck, CI/CD</p>
@@ -126,7 +126,7 @@ const translations = {
             <div class="experience-entry">
                 <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)">
                     <h3>Ingeniero de Infraestructura en la Nube</h3>
-                    <h4>CERN - Equipo de Infraestructura en la Nube, Suiza - Septiembre 2021 hasta Presente</h4>
+                    <h4>CERN - Equipo de Infraestructura en la Nube, Suiza - Septiembre 2021 hasta Septiembre 2023</h4>
                 </div>
                 <ul class="achievements-list" style="display: none;">
                     <p><strong>Tecnologías usadas:</strong> OpenStack, Linux, Python, Bash, Puppet, MySQL, InfluxDB, Prometheus, Grafana, Rundeck, CI/CD</p>
@@ -175,7 +175,7 @@ const translations = {
             <div class="experience-entry">
                 <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)">
                     <h3>Ingénieur Infrastructure Cloud</h3>
-                    <h4>CERN - Équipe Infrastructure Cloud, Suisse - Septembre 2021 à aujourd'hui</h4>
+                    <h4>CERN - Équipe Infrastructure Cloud, Suisse - Septembre 2021 à Septembre 2023</h4>
                 </div>
                 <ul class="achievements-list" style="display: none;">
                     <p><strong>Technologies utilisées :</strong> OpenStack, Linux, Python, Bash, Puppet, MySQL, InfluxDB, Prometheus, Grafana, Rundeck, CI/CD</p>
