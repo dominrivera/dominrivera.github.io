@@ -81,9 +81,9 @@ const translations = {
                 </div>
                 <ul class="achievements-list" style="display: none;">
                     <p><strong>Tech Stack:</strong> OpenStack, Linux, Python, Bash, Puppet, MySQL, InfluxDB, Prometheus, Grafana, Rundeck, CI/CD</p>
+                    <li>Played a key role in configuring, managing, and continuously improving CERN's Cloud Service infrastructure (OpenStack).</li>
                     <li>Responsible for monitoring the Cloud Service, ensuring high availability and performance through proactive monitoring.</li>
                     <li>Developed and maintained automation tools for the Cloud Service, streamlining operations and improving efficiency.</li>
-                    <li>Played a key role in configuring, managing, and continuously improving CERN's Cloud Service infrastructure (OpenStack).</li>
                     <li>Managed and maintained the CERN OpenStack web application, ensuring its availability and performance for thousands of users.</li>
                     <li>Member of the Cloud Service support team in charge of addressing user incidents and requests, providing solutions and support for a large-scale infrastructure that serves thousands of users. This infrastructure includes nearly 10,000 physical servers, 13,000 virtual machines, and almost half a million cores.</li>
                 </ul>
@@ -95,7 +95,8 @@ const translations = {
                 </div>
                 <ul class="achievements-list" style="display: none;">
                     <p><strong>Tech Stack:</strong> Linux, Python, Puppet, Ansible, Nomad, Docker, Kubernetes, CI/CD, InfluxDB, Telegraf, Grafana, Filebeat, Logstash</p>
-                    <li>Contributed to the migration of several systems to a container-based infrastructure using Nomad and Kubernetes.</li>
+                    <li>Designed, built, and conﬁgured a containerized infrastructure utilizing Hashicorp Nomad.</li>
+                    <li>Migrated several systems to Nomad and Kubernetes.</li>
                     <li>Led the migration of hardware and application monitoring and alarming sensors to Collectd.</li>
                     <li>Continuously improved the group's configuration elements using Puppet.</li>
                     <li>Member of the support team in charge of the physical and virtual platform of the group.</li>
@@ -130,9 +131,9 @@ const translations = {
                 </div>
                 <ul class="achievements-list" style="display: none;">
                     <p><strong>Tecnologías usadas:</strong> OpenStack, Linux, Python, Bash, Puppet, MySQL, InfluxDB, Prometheus, Grafana, Rundeck, CI/CD</p>
+                    <li>Jugó un papel clave en la configuración, gestión y mejora continua de la infraestructura del Servicio en la Nube de CERN (OpenStack).</li>
                     <li>Responsable de monitorear el Servicio en la Nube, asegurando alta disponibilidad y rendimiento a través del monitoreo proactivo.</li>
                     <li>Desarrolló y mantuvo herramientas de automatización para el Servicio en la Nube, agilizando operaciones y mejorando la eficiencia.</li>
-                    <li>Jugó un papel clave en la configuración, gestión y mejora continua de la infraestructura del Servicio en la Nube de CERN (OpenStack).</li>
                     <li>Gestionó y mantuvo la aplicación web OpenStack de CERN, asegurando su disponibilidad y rendimiento para miles de usuarios.</li>
                     <li>Miembro del equipo de soporte del Servicio en la Nube encargado de atender incidentes y solicitudes de los usuarios, proporcionando soluciones y soporte para una infraestructura a gran escala que sirve a miles de usuarios. Esta infraestructura incluye casi 10,000 servidores físicos, 13,000 máquinas virtuales y casi medio millón de núcleos.</li>
                 </ul>
@@ -144,9 +145,10 @@ const translations = {
                 </div>
                 <ul class="achievements-list" style="display: none;">
                     <p><strong>Tecnologías usadas:</strong> Linux, Python, Puppet, Ansible, Nomad, Docker, Kubernetes, CI/CD, InfluxDB, Telegraf, Grafana, Filebeat, Logstash</p>
-                    <li>Contribuyó a la migración de varios sistemas a una infraestructura basada en contenedores usando Nomad y Kubernetes.</li>
-                    <li>Lideró la migración de sensores de monitoreo y alerta de hardware y aplicaciones a Collectd.</li>
-                    <li>Mejoró continuamente los elementos de configuración del grupo utilizando Puppet.</li>
+                    <li>Diseñé, construí y configuré una infraestructura contenerizada utilizando Hashicorp Nomad.</li>
+                    <li>Trabajé en la migración de varios sistemas a Nomad y Kubernetes.
+                    <li>Lideré la migración de sensores de monitoreo y alerta de hardware y aplicaciones a Collectd.</li>
+                    <li>Mejoré continuamente los elementos de configuración del grupo utilizando Puppet.</li>
                     <li>Miembro del equipo de soporte a cargo de la plataforma física y virtual del grupo.</li>
                 </ul>
             </div>
@@ -156,7 +158,7 @@ const translations = {
                     <h4>Conexiona Telecom, España - Febrero 2018 a Mayo 2018</h4>
                 </div>
                 <ul class="achievements-list" style="display: none;">
-                    <li>Desarrolló el sistema de notificaciones para la aplicación web que gestiona los registros financieros de la empresa.</li>
+                    <li>Desarrollé el sistema de notificaciones para la aplicación web que gestiona los registros financieros de la empresa.</li>
                 </ul>
             </div>
             <div class="experience-entry">
@@ -165,8 +167,8 @@ const translations = {
                     <h4>Universidad de Vigo, España - Noviembre 2017 a Marzo 2018</h4>
                 </div>
                 <ul class="achievements-list" style="display: none;">
-                    <li>Proporcionó soporte en la gestión de la infraestructura informática de aproximadamente 500 ordenadores y periféricos.</li>
-                    <li>Cubrió la gestión, mantenimiento y resolución de problemas de hardware y software.</li>
+                    <li>Proporcioné soporte en la gestión de la infraestructura informática de aproximadamente 500 ordenadores y periféricos.</li>
+                    <li>Cubrí la gestión, mantenimiento y resolución de problemas de hardware y software.</li>
                 </ul>
             </div>
         `,
@@ -179,9 +181,9 @@ const translations = {
                 </div>
                 <ul class="achievements-list" style="display: none;">
                     <p><strong>Technologies utilisées :</strong> OpenStack, Linux, Python, Bash, Puppet, MySQL, InfluxDB, Prometheus, Grafana, Rundeck, CI/CD</p>
+                    <li>A joué un rôle clé dans la configuration, la gestion et l'amélioration continue de l'infrastructure du Service Cloud du CERN (OpenStack).</li>
                     <li>Responsable de la surveillance du Service Cloud, assurant une haute disponibilité et des performances grâce à une surveillance proactive.</li>
                     <li>Développé et maintenu des outils d'automatisation pour le Service Cloud, rationalisant les opérations et améliorant l'efficacité.</li>
-                    <li>A joué un rôle clé dans la configuration, la gestion et l'amélioration continue de l'infrastructure du Service Cloud du CERN (OpenStack).</li>
                     <li>Géré et maintenu l'application web OpenStack du CERN, assurant sa disponibilité et ses performances pour des milliers d'utilisateurs.</li>
                     <li>Membre de l'équipe de support du Service Cloud chargée de répondre aux incidents et demandes des utilisateurs, fournissant des solutions et du support pour une infrastructure à grande échelle qui sert des milliers d'utilisateurs. Cette infrastructure comprend près de 10 000 serveurs physiques, 13 000 machines virtuelles et près d'un demi-million de cœurs.</li>
                 </ul>
@@ -193,7 +195,8 @@ const translations = {
                 </div>
                 <ul class="achievements-list" style="display: none;">
                     <p><strong>Technologies utilisées :</strong> Linux, Python, Puppet, Ansible, Nomad, Docker, Kubernetes, CI/CD, InfluxDB, Telegraf, Grafana, Filebeat, Logstash</p>
-                    <li>A contribué à la migration de plusieurs systèmes vers une infrastructure basée sur des conteneurs en utilisant Nomad et Kubernetes.</li>
+                    <li>Conçu, construit et configuré une infrastructure conteneurisée en utilisant Hashicorp Nomad.</li>
+                    <li>A effectué la migration de plusieurs systèmes vers Nomad et Kubernetes.</li>
                     <li>A dirigé la migration des capteurs de surveillance et d'alerte matériel et application vers Collectd.</li>
                     <li>A amélioré continuellement les éléments de configuration du groupe en utilisant Puppet.</li>
                     <li>Membre de l'équipe de support en charge de la plateforme physique et virtuelle du groupe.</li>
@@ -226,6 +229,7 @@ const translations = {
             <div id="tech-content">
                 <ul class="tech-list">
                     <li>OpenStack</li>
+                    <li>AWS</li>
                     <li>Python</li>
                     <li>Bash</li>
                     <li>Puppet</li>
@@ -239,7 +243,6 @@ const translations = {
                     <li>Kubernetes</li>
                     <li>Ansible</li>
                     <li>Prometheus</li>
-                    <li>Git</li>
                     <li>GitLab</li>
                     <li>Github</li>
                     <li>CI/CD</li>
@@ -253,6 +256,7 @@ const translations = {
             <div id="tech-content">
                 <ul class="tech-list">
                     <li>OpenStack</li>
+                    <li>AWS</li>
                     <li>Python</li>
                     <li>Bash</li>
                     <li>Puppet</li>
@@ -266,7 +270,6 @@ const translations = {
                     <li>Kubernetes</li>
                     <li>Ansible</li>
                     <li>Prometheus</li>
-                    <li>Git</li>
                     <li>GitLab</li>
                     <li>Github</li>
                     <li>CI/CD</li>
@@ -280,6 +283,7 @@ const translations = {
             <div id="tech-content">
                 <ul class="tech-list">
                     <li>OpenStack</li>
+                    <li>AWS</li>
                     <li>Python</li>
                     <li>Bash</li>
                     <li>Puppet</li>
@@ -293,7 +297,6 @@ const translations = {
                     <li>Kubernetes</li>
                     <li>Ansible</li>
                     <li>Prometheus</li>
-                    <li>Git</li>
                     <li>GitLab</li>
                     <li>Github</li>
                     <li>CI/CD</li>
