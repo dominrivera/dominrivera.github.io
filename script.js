@@ -321,12 +321,31 @@ const translations = {
                     <h4>Bialystok University of Technology, Poland - 2016</h4>
                 </div>
             </div>
+            
             <h2 class="section-title">Certifications</h2>
-            <div id="education" class="content-section">
-                <div class="education-entry">
+            <div class="cert-entry">
+                <div class="cert-title" onclick="toggleVisibility(this.nextElementSibling)">
                     <h3>CKA: Certified Kubernetes Administrator</h3>
-                    <img src="CKA.jpg" alt="Your picture" class="card-img">
                 </div>
+                <ul class="achievements-list" style="display: none;">
+                    <img src="CKA.jpg" width="450" height="300">
+                </ul>
+            </div>
+            <div class="cert-entry">
+                <div class="cert-title" onclick="toggleVisibility(this.nextElementSibling)">
+                    <h3>Kubernetes Fundamentals (LFS258)</h3>
+                </div>
+                <ul class="achievements-list" style="display: none;">
+                    <img src="LFS258.jpg" width="450" height="300">
+                </ul>
+            </div>
+            <div class="cert-entry">
+                <div class="cert-title" onclick="toggleVisibility(this.nextElementSibling)">
+                    <h3>HashiCorp Certified: Vault Associate (002)</h3>
+                </div>
+                <ul class="achievements-list" style="display: none;">
+                    <img src="vault_associate.jpg" width="450" height="300">
+                </ul>
             </div>
         `,
         "es": `
@@ -343,6 +362,32 @@ const translations = {
                     <h4>Bialystok University of Technology, Polonia - 2016</h4>
                 </div>
             </div>
+
+            <h2 class="section-title">Certificaciones</h2>
+            <div class="cert-entry">
+                <div class="cert-title" onclick="toggleVisibility(this.nextElementSibling)">
+                    <h3>CKA: Certified Kubernetes Administrator</h3>
+                </div>
+                <ul class="achievements-list" style="display: none;">
+                    <img src="CKA.jpg" width="450" height="300">
+                </ul>
+            </div>
+            <div class="cert-entry">
+                <div class="cert-title" onclick="toggleVisibility(this.nextElementSibling)">
+                    <h3>Kubernetes Fundamentals (LFS258)</h3>
+                </div>
+                <ul class="achievements-list" style="display: none;">
+                    <img src="LFS258.jpg" width="450" height="300">
+                </ul>
+            </div>
+            <div class="cert-entry">
+                <div class="cert-title" onclick="toggleVisibility(this.nextElementSibling)">
+                    <h3>HashiCorp Certified: Vault Associate (002)</h3>
+                </div>
+                <ul class="achievements-list" style="display: none;">
+                    <img src="vault_associate.jpg" width="450" height="300">
+                </ul>
+            </div>
         `,
         "fr": `
             <h2 class="section-title">Éducation</h2>
@@ -357,6 +402,32 @@ const translations = {
                     <h3>Programme Erasmus, Ingénierie Informatique</h3>
                     <h4>Université de Technologie de Bialystok, Pologne - 2016</h4>
                 </div>
+            </div>
+
+            <h2 class="section-title">Certifications</h2>
+            <div class="cert-entry">
+                <div class="cert-title" onclick="toggleVisibility(this.nextElementSibling)">
+                    <h3>CKA: Certified Kubernetes Administrator</h3>
+                </div>
+                <ul class="achievements-list" style="display: none;">
+                    <img src="CKA.jpg" width="450" height="300">
+                </ul>
+            </div>
+            <div class="cert-entry">
+                <div class="cert-title" onclick="toggleVisibility(this.nextElementSibling)">
+                    <h3>Kubernetes Fundamentals (LFS258)</h3>
+                </div>
+                <ul class="achievements-list" style="display: none;">
+                    <img src="LFS258.jpg" width="450" height="300">
+                </ul>
+            </div>
+            <div class="cert-entry">
+                <div class="cert-title" onclick="toggleVisibility(this.nextElementSibling)">
+                    <h3>HashiCorp Certified: Vault Associate (002)</h3>
+                </div>
+                <ul class="achievements-list" style="display: none;">
+                    <img src="vault_associate.jpg" width="450" height="300">
+                </ul>
             </div>
         `,
     }
