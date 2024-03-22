@@ -321,6 +321,13 @@ const translations = {
                     <h4>Bialystok University of Technology, Poland - 2016</h4>
                 </div>
             </div>
+            <h2 class="section-title">Certifications</h2>
+            <div id="education" class="content-section">
+                <div class="education-entry">
+                    <h3>CKA: Certified Kubernetes Administrator</h3>
+                    <img src="CKA.jpg" alt="Your picture" class="card-img">
+                </div>
+            </div>
         `,
         "es": `
             <h2 class="section-title">Educación</h2>
