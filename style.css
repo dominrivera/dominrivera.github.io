@@ -388,3 +388,42 @@ body {
 .education-entry a:hover {
     text-decoration: underline;
 }
+
+/* Certifications section */
+
+.cert-title {
+    cursor: pointer;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.cert-title:hover {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    transform: translateY(-5px);
+}
+
+.cert-entry {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+.cert-entry h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.cert-entry h4 {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 15px;
+}
