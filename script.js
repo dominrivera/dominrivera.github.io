@@ -478,6 +478,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         body.style.backgroundColor = '#65a6c0';
     } else {
         // Night time
-        body.style.backgroundColor = '#28505f';
+        body.style.backgroundColor = '#34495E';
     }
 });
