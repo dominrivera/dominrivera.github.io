@@ -19,9 +19,9 @@ const translations = {
                 <a href="https://github.com/dominrivera" data-title="Github" target="_blank">
                     <i class="fab fa-github link-icon"></i>
                 </a>
-                <a href="https://gitlab.cern.ch/driverab" data-title="Gitlab" target="_blank">
+                <!--<a href="https://gitlab.cern.ch/driverab" data-title="Gitlab" target="_blank">
                     <i class="fab fa-gitlab link-icon"></i>
-                </a>
+                </a>-->
             </div>
         `,
         "es": `
@@ -42,9 +42,9 @@ const translations = {
                 <a href="https://github.com/dominrivera" data-title="Github" target="_blank">
                     <i class="fab fa-github link-icon"></i>
                 </a>
-                <a href="https://gitlab.cern.ch/driverab" data-title="Gitlab" target="_blank">
+                <!--<a href="https://gitlab.cern.ch/driverab" data-title="Gitlab" target="_blank">
                     <i class="fab fa-gitlab link-icon"></i>
-                </a>
+                </a>-->
             </div>
         `,
         "fr": `
@@ -65,9 +65,9 @@ const translations = {
                 <a href="https://github.com/dominrivera" data-title="Github" target="_blank">
                     <i class="fab fa-github link-icon"></i>
                 </a>
-                <a href="https://gitlab.cern.ch/driverab" data-title="Gitlab" target="_blank">
+                <!--<a href="https://gitlab.cern.ch/driverab" data-title="Gitlab" target="_blank">
                     <i class="fab fa-gitlab link-icon"></i>
-                </a>
+                </a>-->
             </div>
         `,
     },
