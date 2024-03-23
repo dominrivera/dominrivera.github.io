@@ -468,12 +468,13 @@ function toggleVisibility(element) {
     }
 }
 
+// Change background color according to the hour
 document.addEventListener('DOMContentLoaded', (event) => {
     var currentTime = new Date();
     var hour = currentTime.getHours();
     var body = document.body;
 
-    if(hour >= 8 && hour < 22){ // Change background color according to the hour
+    if(hour >= 8 && hour < 22){
         // Day time
         body.style.backgroundColor = '#65a6c0';
     } else {
@@ -481,3 +482,21 @@ document.addEventListener('DOMContentLoaded', (event) => {
         body.style.backgroundColor = '#34495E';
     }
 });
+
+// Typewriter effect
+function typeWriter(text, i, fnCallback) {
+    if (i < text.length) {
+      document.querySelector("h1").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
+  
+      setTimeout(function() {
+        typeWriter(text, i + 1, fnCallback)
+      }, 100);
+    }
+    else if (typeof fnCallback == 'function') {
+      setTimeout(fnCallback, 700);
+    }
+  }
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    typeWriter("Hi! I am Domingo.", 0);
+  });
