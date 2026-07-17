@@ -4,17 +4,19 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #65a6c0;
+    background: linear-gradient(135deg, #65a6c0 0%, #4a8ba5 100%);
     font-family: Arial, sans-serif;
 }
 
+/* ── Section title ── */
 .section-title {
-    font-size: 28px;
+    font-size: 22px;
     color: #333333;
     text-align: center;
     padding-bottom: 10px;
     margin-bottom: 20px;
     position: relative;
+    letter-spacing: 0.5px;
 }
 
 .section-title::after {
@@ -24,19 +26,22 @@ body {
     bottom: 0;
     transform: translateX(-50%);
     height: 3px;
-    width: 50px;
-    background: #82acda;
+    width: 40px;
+    background: linear-gradient(90deg, #82acda, #65a6c0);
+    border-radius: 2px;
 }
 
+/* ── Layout ── */
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* The container will take the full viewport height */
+    height: 100vh;
     padding: 20px;
     box-sizing: border-box;
 }
 
+/* ── Sidebar ── */
 .sidebar {
     width: 50px;
     display: flex;
@@ -48,17 +53,24 @@ body {
     background-color: #ffffff;
     border-radius: 15px;
     color: #82acda;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
 }
 
 .sidebar i {
     cursor: pointer;
+    transition: color 0.25s, transform 0.2s;
 }
 
 .sidebar i:hover {
     color: #3d434b;
+    transform: scale(1.15);
 }
 
-/* Tooltip container */
+.sidebar i.active {
+    color: #1e6fa8;
+}
+
+/* ── Tooltip ── */
 .tooltip {
     position: relative;
     display: flex;
@@ -68,209 +80,193 @@ body {
 .tooltip::before {
     content: attr(data-title);
     position: absolute;
-    top: 50%; 
-    transform: translateY(-100%);
-    right: calc(100% + 10px);
-    background-color: #555;
+    top: 50%;
+    transform: translateY(-50%);
+    right: calc(100% + 12px);
+    background-color: #333;
     color: #fff;
-    padding: 5px;
-    border-radius: 5px;
+    padding: 5px 9px;
+    border-radius: 6px;
     font-size: 12px;
     white-space: nowrap;
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.3s;
+    transition: opacity 0.25s;
+    pointer-events: none;
 }
 
-/* Show the tooltip when hovering over the icon */
 .tooltip:hover::before {
     visibility: visible;
     opacity: 1;
 }
 
+/* ── Card ── */
 .card {
-    width: 500px;
+    width: 520px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Align to the top of the card */
+    justify-content: flex-start;
     align-items: center;
     padding: 30px;
     background-color: #ffffff;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-    margin: 20px auto; /* Add vertical margins */
-    overflow-y: auto; /* Add scroll when the content overflows */
-    max-height: calc(100vh - 100px); /* Set the maximum height */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    border-radius: 18px;
+    margin: 20px auto;
+    overflow-y: auto;
+    max-height: calc(100vh - 60px);
 }
 
-/* This will change the scrollbar within the card */
-.card::-webkit-scrollbar {
-    width: 10px; /* Adjust width of scrollbar here */
-}
+.card::-webkit-scrollbar { width: 6px; }
+.card::-webkit-scrollbar-track { border-radius: 10px; background: #f1f1f1; }
+.card::-webkit-scrollbar-thumb { background: #c0c0c0; border-radius: 10px; }
+.card::-webkit-scrollbar-thumb:hover { background: #888; }
 
-.card::-webkit-scrollbar-track {
-    border-radius: 10px; /* Makes the track of the scrollbar rounded */
-    background: #f1f1f1; /* Adjust the color of the track here */
-}
-
-.card::-webkit-scrollbar-thumb {
-    background: #888; /* Adjust the color of the thumb (the part that moves) here */
-    border-radius: 10px; /* Makes the thumb of the scrollbar rounded */
-}
-
-.card::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Changes the color of thumb when hovered */
-}
-
-/* New class for the main content area */
 .card-main-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
+/* ── Menu items ── */
 .menu-item {
-    font-size: 30px;
+    font-size: 28px;
     cursor: pointer;
     margin-bottom: 20px;
-    transition: .3s;
+    transition: color 0.25s, transform 0.2s;
 }
 
 .menu-item:hover {
-    color: #0056b3;
+    color: #1e6fa8;
+    transform: scale(1.15);
 }
 
-/* New class for the dynamic content area */
+/* ── Card content with fade animation ── */
 #card-content {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center items vertically within the content area */
-    justify-content: center; /* Center items horizontally within the content area */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
+#card-content.fade-in {
+    animation: fadeInUp 0.3s ease both;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Typewriter cursor ── */
+.typewriter-cursor::after {
+    content: '|';
+    animation: blink 0.7s step-end infinite;
+    color: #1e6fa8;
+    font-weight: 300;
+    margin-left: 2px;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0; }
+}
+
+/* ── Profile image ── */
 .card-img {
-    width: 225px;
-    height: 225px;
+    width: 200px;
+    height: 200px;
     margin-bottom: 20px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid #c0c0c0; /* Adds a border to the image */
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); /* Adds a shadow to the image */
+    border: 3px solid #e0e9f5;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
 }
 
+/* ── Name & role ── */
 .card-name {
-    margin: 0;
-    font-size: 30px;
+    margin: 0 0 5px;
+    font-size: 28px;
     font-weight: bold;
-    color: #333333;
-    padding: 5px;
-    background-color: #ffffff;
-    border-radius: 15px;
+    color: #222;
     text-align: center;
-    margin-bottom: 5px; /* Adds some margin to the bottom */
 }
 
 .card-role {
-    margin-top: 10px;
-    font-size: 20px;
-    color: #666666;
+    margin-top: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e6fa8;
     text-align: center;
-  }
-  
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+}
 
 .card-name i {
     margin-left: 10px;
     color: #506e8f;
 }
 
+/* ── Description ── */
 .card-desc {
-    font-size: 18px;
-    color: #333333;
-    line-height: 1.5; /* Increase the space between lines of text */
-    margin-top: 10px;
+    font-size: 15px;
+    color: #444;
+    line-height: 1.65;
+    margin-top: 18px;
     text-align: justify;
-    padding: 0 15px; /* Add some horizontal padding */
-    background-color: #ffffff; /* Add a light background to provide contrast */
-    border-radius: 10px; /* Add some rounding to the corners for a softer look */
+    padding: 0 5px;
 }
 
+/* ── Social links ── */
 .card-links {
-    margin-top: 30px;
-    display: flex; /* Makes the icons line up horizontally */
-    justify-content: center; /* Centers the icons */
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 .card-links a {
     position: relative;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 10px;
     color: #82acda;
 }
 
 .link-icon {
     font-size: 24px;
-    transition: color 0.3s ease;
+    transition: color 0.25s ease, transform 0.2s;
 }
 
-/* Tooltip container */
 .card-links a::after {
-    content: attr(data-title); /* This gets the text from the title attribute */
+    content: attr(data-title);
     position: absolute;
-    top: -2.5em; /* Position the tooltip 2em above the link */
+    top: -2.4em;
     left: 50%;
-    transform: translateX(-50%); /* This centers the tooltip */
-    background-color: #555; /* Background color of the tooltip */
-    color: #fff; /* Text color of the tooltip */
-    padding: 5px;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 4px 8px;
     border-radius: 5px;
-    font-size: 12px;
-    white-space: nowrap; /* This stops the tooltip text from wrapping onto multiple lines */
-    visibility: hidden; /* Hide the tooltip by default */
+    font-size: 11px;
+    white-space: nowrap;
+    visibility: hidden;
     opacity: 0;
-    transition: opacity 0.3s;
+    transition: opacity 0.25s;
 }
 
-/* Show the tooltip when hovering over the link */
 .card-links a:hover::after {
     visibility: visible;
     opacity: 1;
 }
 
 .link-icon:hover {
-    color: #0056b3;
+    color: #1e6fa8;
+    transform: scale(1.2);
 }
 
-
-#tech-content h3 {
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 15px;
-    color: #333;
-    text-transform: uppercase;
-}
-
-.tech-list {
-    column-count: 4;
-    column-gap: 20px;
-    padding: 0;
-    list-style-type: none;
-    text-align: center;
-    width: 100%;
-}
-
-.tech-list li {
-    padding: 10px;
-    margin-bottom: 15px;
-    background-color: #f5f5f5;
-    border-radius: 10px;
-    color: #333333;
-    font-size: 16px;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    border: 1px solid #ddd;
-}
-
+/* ── Language flags ── */
 .language-toggle {
     display: flex;
     flex-direction: column;
@@ -280,111 +276,268 @@ body {
 }
 
 .lang-flag {
-    width: 30px;
+    width: 28px;
     cursor: pointer;
+    border-radius: 3px;
+    transition: transform 0.2s, opacity 0.2s;
 }
 
-.language-toggle img {
-    max-width: 100%;
-    max-height: 100%;
+.lang-flag:hover {
+    transform: scale(1.15);
 }
 
-/* Experience Section */
+/* ── Experience entries ── */
+.experience-entry {
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+    width: 100%;
+    box-sizing: border-box;
+    border-left: 3px solid #82acda;
+    transition: box-shadow 0.25s, transform 0.2s;
+}
+
+.experience-entry:hover {
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.13);
+}
 
 .experience-title {
     cursor: pointer;
-    padding: 10px;
-    transition: all 0.3s ease-in-out;
-}
-
-.experience-title:hover {
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-    background-color: #f5f5f5;
-    border-radius: 10px;
-    transform: translateY(-5px);
-}
-
-.experience-entry {
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 15px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    overflow: auto;
-    width: 100%;
-    box-sizing: border-box;
-    transition: all 0.3s ease-in-out;
 }
 
 .experience-entry h3 {
-    font-size: 22px;
-    color: #333;
-    margin-bottom: 10px;
+    font-size: 16px;
+    color: #222;
+    margin: 0 0 6px;
+    font-weight: 700;
+}
+
+.exp-company {
+    font-weight: 400;
+    color: #1e6fa8;
 }
 
 .experience-entry h4 {
-    font-size: 18px;
-    color: #777;
-    margin-bottom: 15px;
+    font-size: 13px;
+    color: #888;
+    margin: 0;
+    font-weight: 400;
 }
 
+.experience-entry h4 i {
+    margin-right: 4px;
+    font-size: 11px;
+}
+
+.tech-stack-label {
+    font-size: 13px;
+    color: #666;
+    margin: 12px 0 8px;
+    padding: 8px 10px;
+    background: #eef4fb;
+    border-radius: 6px;
+    line-height: 1.5;
+}
 
 .achievements-list {
     color: #555;
     line-height: 1.6;
     list-style-type: disc;
-    padding-left: 20px;
+    padding-left: 18px;
+    margin-top: 8px;
 }
 
 .achievements-list li {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    font-size: 14px;
 }
 
 .achievements-list-container {
     display: none;
 }
 
-/* Education Section */
-.content-section {
-    padding: 20px 0;
+/* ── Tech badges ── */
+.tech-category {
+    margin-bottom: 18px;
+    width: 100%;
 }
 
-.content-section h2 {
-    font-size: 28px;
-    color: #333;
-    margin-bottom: 20px;
+.tech-category-title {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #999;
+    margin: 0 0 8px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #eee;
+    font-weight: 600;
+}
+
+.tech-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.tech-badge {
+    padding: 5px 13px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    transition: transform 0.15s;
+}
+
+.tech-badge:hover {
+    transform: translateY(-2px);
+}
+
+.tech-badge.cloud       { background: #e8f4fd; color: #1565c0; border: 1px solid #90caf9; }
+.tech-badge.containers  { background: #e8f5e9; color: #2e7d32; border: 1px solid #a5d6a7; }
+.tech-badge.iac         { background: #fff3e0; color: #e65100; border: 1px solid #ffcc80; }
+.tech-badge.cicd        { background: #f3e5f5; color: #6a1b9a; border: 1px solid #ce93d8; }
+.tech-badge.observability { background: #fce4ec; color: #c62828; border: 1px solid #f48fb1; }
+.tech-badge.security    { background: #fff8e1; color: #f57f17; border: 1px solid #ffe082; }
+.tech-badge.lang        { background: #e0f2f1; color: #00695c; border: 1px solid #80cbc4; }
+
+/* ── Education ── */
+.content-section {
+    padding: 5px 0 15px;
+    width: 100%;
 }
 
 .education-entry {
     background-color: #f9f9f9;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 15px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+    border-left: 3px solid #82acda;
 }
 
 .education-entry h3 {
-    font-size: 22px;
-    color: #333;
-    margin-bottom: 10px;
+    font-size: 16px;
+    color: #222;
+    margin: 0 0 6px;
+    font-weight: 700;
 }
 
 .education-entry h4 {
-    font-size: 18px;
-    color: #777;
-    margin-bottom: 15px;
+    font-size: 13px;
+    color: #888;
+    margin: 0 0 8px;
+    font-weight: 400;
 }
 
 .education-entry p {
     color: #555;
     line-height: 1.6;
+    font-size: 14px;
+    margin: 0;
 }
 
 .education-entry a {
-    color: #007bff;
+    color: #1e6fa8;
     text-decoration: none;
 }
 
 .education-entry a:hover {
     text-decoration: underline;
+}
+
+/* ── Certifications grid ── */
+.certs-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    padding: 5px 0 10px;
+    width: 100%;
+}
+
+.cert-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f9f9f9;
+    border-radius: 12px;
+    padding: 16px 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    flex: 1;
+    min-width: 120px;
+    max-width: 150px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid #eee;
+}
+
+.cert-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.13);
+}
+
+.cert-item img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.cert-item h3 {
+    font-size: 12px;
+    text-align: center;
+    color: #444;
+    margin: 0;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.cert-item img {
+    cursor: zoom-in;
+}
+
+/* ── Lightbox ── */
+#lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    cursor: zoom-out;
+    backdrop-filter: blur(4px);
+}
+
+#lightbox.open {
+    display: flex;
+    animation: fadeInUp 0.2s ease both;
+}
+
+#lightbox img {
+    max-width: 85vw;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    cursor: default;
+}
+
+#lightbox-close {
+    position: fixed;
+    top: 20px;
+    right: 24px;
+    color: #fff;
+    font-size: 32px;
+    cursor: pointer;
+    line-height: 1;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+    z-index: 1001;
+}
+
+#lightbox-close:hover {
+    opacity: 1;
 }

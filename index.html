@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Domingo Rivera Barros</title>
     <link rel="icon" type="image/png" href="drb.png"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
@@ -12,16 +13,16 @@
     <div class="container">
         <div class="sidebar">
             <div class="tooltip" data-title="Information">
-                <i class="fas fa-info-circle menu-item" onclick="changeContent('personal')"></i>
+                <i class="fas fa-info-circle menu-item active" data-section="personal" onclick="changeContent('personal')"></i>
             </div>
             <div class="tooltip" data-title="Experience">
-                <i class="fas fa-briefcase menu-item" onclick="changeContent('experience')"></i>
+                <i class="fas fa-briefcase menu-item" data-section="experience" onclick="changeContent('experience')"></i>
             </div>
             <div class="tooltip" data-title="Technologies">
-                <i class="fas fa-laptop-code menu-item" onclick="changeContent('technologies')"></i>
+                <i class="fas fa-laptop-code menu-item" data-section="technologies" onclick="changeContent('technologies')"></i>
             </div>
             <div class="tooltip" data-title="Education">
-                <i class="fas fa-graduation-cap menu-item" onclick="changeContent('education')"></i>
+                <i class="fas fa-graduation-cap menu-item" data-section="education" onclick="changeContent('education')"></i>
             </div>
             <div class="language-toggle">
                 <img class="lang-flag" style="opacity: 1.0;" src="en.png" alt="en" onclick="changeLanguage('en')">
@@ -32,10 +33,15 @@
         <div class="card">
             <div class="card-main-content">
                 <div id="card-content">
-                    <!-- Card content will be inserted here by the script.js file -->
+                    <!-- Content is loaded dynamically by script.js -->
                 </div>
             </div>
         </div>
+    </div>
+    <!-- Lightbox -->
+    <div id="lightbox" onclick="closeLightbox()">
+        <span id="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="" alt="Certificate" onclick="event.stopPropagation()">
     </div>
 </body>
 </html>
