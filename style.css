@@ -558,7 +558,7 @@ body {
 }
 
 .education-entry-body {
-    padding: 14px 18px;
+    padding: 14px 18px 14px;
 }
 
 .education-entry h3 {
@@ -703,4 +703,160 @@ body {
 #lightbox-close:hover {
     color: #fff;
     transform: scale(1.15);
+}
+
+/* ─────────────────────────────────────
+   RESPONSIVE — Tablet (≤ 768px)
+───────────────────────────────────── */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        max-width: 540px;
+    }
+}
+
+/* ─────────────────────────────────────
+   RESPONSIVE — Mobile (≤ 600px)
+───────────────────────────────────── */
+@media (max-width: 600px) {
+
+    /* Stack vertically, card fills screen */
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0;
+        padding-bottom: 68px; /* space for bottom nav */
+        min-height: 100vh;
+        justify-content: flex-start;
+    }
+
+    /* Card full-width, top-rounded */
+    .card {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+        max-height: none;
+        min-height: calc(100vh - 68px);
+        flex: 1;
+    }
+
+    /* No shimmer gap at top since card is edge-to-edge */
+    .card::before {
+        height: 4px;
+    }
+
+    .card-main-content {
+        padding: 20px 16px 24px;
+        overflow-y: visible;
+        max-height: none;
+    }
+
+    /* Sidebar → fixed bottom nav bar */
+    .sidebar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 0;
+        margin: 0;
+        padding: 10px 16px;
+        gap: 0;
+        z-index: 200;
+        box-shadow: 0 -2px 16px rgba(0, 0, 0, 0.12);
+        border-top: 1px solid #eee;
+    }
+
+    /* Divider becomes vertical in the row */
+    .sidebar-divider {
+        width: 1px;
+        height: 28px;
+        background: #e0e0e0;
+        margin: 0 4px;
+    }
+
+    /* Language flags horizontal in bottom bar */
+    .language-toggle {
+        flex-direction: row;
+        gap: 8px;
+    }
+
+    /* Slightly smaller icons in bottom bar */
+    .menu-item {
+        font-size: 20px;
+        padding: 5px;
+        margin-bottom: 0;
+    }
+
+    .lang-flag {
+        width: 22px;
+    }
+
+    /* Hide tooltips (they'd go offscreen) */
+    .tooltip::before {
+        display: none;
+    }
+
+    /* Profile image smaller */
+    .card-img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .card-name {
+        font-size: 22px;
+    }
+
+    .card-role {
+        font-size: 10px;
+    }
+
+    .card-desc {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    /* Tech badges wrap fine, but give a bit more room */
+    .tech-badges {
+        gap: 5px;
+    }
+
+    .tech-badge {
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+
+    /* Cert grid: 2 columns on mobile */
+    .certs-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .cert-item {
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    /* Section title */
+    .section-title {
+        font-size: 12px;
+    }
+
+    /* Experience/education full width already, just adjust padding */
+    .experience-title {
+        padding: 12px 14px 10px;
+    }
+
+    .achievements-list-container {
+        padding: 0 14px 12px;
+    }
+
+    .education-entry-body {
+        padding: 12px 14px;
+    }
 }
