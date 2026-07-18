@@ -71,7 +71,7 @@ const translations = {
                     <h4><i class="fas fa-calendar-alt"></i> Jan 2024 – Present &nbsp;·&nbsp; <i class="fas fa-map-marker-alt"></i> Switzerland</h4>
                 </div>
                 <div class="achievements-list-container" style="display: none;">
-                    <p class="tech-stack-label"><strong>Tech Stack:</strong> Kubernetes, OpenShift, AWS, Azure, GCP, Terraform, Ansible, GitLab CI, ArgoCD, HashiCorp Vault, Python, Bash, Linux</p>
+                    <p class="tech-stack-label"><strong>Tech Stack:</strong> Kubernetes, OpenShift, AWS, Azure, GCP, Terraform, Ansible, GitLab CI, ArgoCD, HashiCorp Vault, OpenBao, Python, Bash, Linux</p>
                     <ul class="achievements-list">
                         <li>Deliver cloud-native infrastructure and DevOps solutions for enterprise clients.</li>
                         <li>Architect and operate Kubernetes and OpenShift platforms across multi-cloud environments (AWS, Azure, GCP).</li>
@@ -146,7 +146,7 @@ const translations = {
                     <h4><i class="fas fa-calendar-alt"></i> Ene 2024 – Presente &nbsp;·&nbsp; <i class="fas fa-map-marker-alt"></i> Suiza</h4>
                 </div>
                 <div class="achievements-list-container" style="display: none;">
-                    <p class="tech-stack-label"><strong>Tecnologías:</strong> Kubernetes, OpenShift, AWS, Azure, GCP, Terraform, Ansible, GitLab CI, ArgoCD, HashiCorp Vault, Python, Bash, Linux</p>
+                    <p class="tech-stack-label"><strong>Tecnologías:</strong> Kubernetes, OpenShift, AWS, Azure, GCP, Terraform, Ansible, GitLab CI, ArgoCD, HashiCorp Vault, OpenBao, Python, Bash, Linux</p>
                     <ul class="achievements-list">
                         <li>Entrego infraestructura cloud-native y soluciones DevOps para clientes empresariales.</li>
                         <li>Diseño y opero plataformas Kubernetes y OpenShift en entornos multi-cloud (AWS, Azure, GCP).</li>
@@ -221,7 +221,7 @@ const translations = {
                     <h4><i class="fas fa-calendar-alt"></i> Jan 2024 – Présent &nbsp;·&nbsp; <i class="fas fa-map-marker-alt"></i> Suisse</h4>
                 </div>
                 <div class="achievements-list-container" style="display: none;">
-                    <p class="tech-stack-label"><strong>Technologies :</strong> Kubernetes, OpenShift, AWS, Azure, GCP, Terraform, Ansible, GitLab CI, ArgoCD, HashiCorp Vault, Python, Bash, Linux</p>
+                    <p class="tech-stack-label"><strong>Technologies :</strong> Kubernetes, OpenShift, AWS, Azure, GCP, Terraform, Ansible, GitLab CI, ArgoCD, HashiCorp Vault, OpenBao, Python, Bash, Linux</p>
                     <ul class="achievements-list">
                         <li>Fourniture d'infrastructure cloud-native et de solutions DevOps pour des clients entreprises.</li>
                         <li>Architecture et exploitation de plateformes Kubernetes et OpenShift dans des environnements multi-cloud (AWS, Azure, GCP).</li>
@@ -333,6 +333,7 @@ const translations = {
                         <span class="tech-badge observability">Prometheus</span>
                         <span class="tech-badge observability">Grafana</span>
                         <span class="tech-badge observability">Elasticsearch</span>
+                        <span class="tech-badge observability">Opensearch</span>
                         <span class="tech-badge observability">Logstash</span>
                         <span class="tech-badge observability">Kibana</span>
                         <span class="tech-badge observability">InfluxDB</span>
@@ -342,6 +343,7 @@ const translations = {
                     <p class="tech-category-title">Security</p>
                     <div class="tech-badges">
                         <span class="tech-badge security">HashiCorp Vault</span>
+                        <span class="tech-badge security">OpenBao</span>
                     </div>
                 </div>
                 <div class="tech-category">
@@ -397,6 +399,7 @@ const translations = {
                         <span class="tech-badge observability">Prometheus</span>
                         <span class="tech-badge observability">Grafana</span>
                         <span class="tech-badge observability">Elasticsearch</span>
+                        <span class="tech-badge observability">Opensearch</span>
                         <span class="tech-badge observability">Logstash</span>
                         <span class="tech-badge observability">Kibana</span>
                         <span class="tech-badge observability">InfluxDB</span>
@@ -406,6 +409,7 @@ const translations = {
                     <p class="tech-category-title">Seguridad</p>
                     <div class="tech-badges">
                         <span class="tech-badge security">HashiCorp Vault</span>
+                        <span class="tech-badge security">OpenBao</span>
                     </div>
                 </div>
                 <div class="tech-category">
@@ -461,6 +465,7 @@ const translations = {
                         <span class="tech-badge observability">Prometheus</span>
                         <span class="tech-badge observability">Grafana</span>
                         <span class="tech-badge observability">Elasticsearch</span>
+                        <span class="tech-badge observability">Opensearch</span>
                         <span class="tech-badge observability">Logstash</span>
                         <span class="tech-badge observability">Kibana</span>
                         <span class="tech-badge observability">InfluxDB</span>
@@ -470,6 +475,7 @@ const translations = {
                     <p class="tech-category-title">Sécurité</p>
                     <div class="tech-badges">
                         <span class="tech-badge security">HashiCorp Vault</span>
+                        <span class="tech-badge security">OpenBao</span>
                     </div>
                 </div>
                 <div class="tech-category">
@@ -510,7 +516,7 @@ const translations = {
                     </div>
                     <div class="cert-item">
                         <img src="vault_associate.jpg" alt="Vault Associate Badge" onclick="openLightbox(this.src)">
-                        <h3>HashiCorp Vault Associate (002)</h3>
+                        <h3>HashiCorp Vault Associate</h3>
                     </div>
                     <div class="cert-item">
                         <img src="hashicorp-certified-vault-operations-professional-1.png" alt="Vault Operations Professional Badge" onclick="openLightbox(this.src)">
@@ -549,7 +555,7 @@ const translations = {
                     </div>
                     <div class="cert-item">
                         <img src="vault_associate.jpg" alt="Vault Associate Badge" onclick="openLightbox(this.src)">
-                        <h3>HashiCorp Vault Associate (002)</h3>
+                        <h3>HashiCorp Vault Associate</h3>
                     </div>
                     <div class="cert-item">
                         <img src="hashicorp-certified-vault-operations-professional-1.png" alt="Vault Operations Professional Badge" onclick="openLightbox(this.src)">
@@ -588,7 +594,7 @@ const translations = {
                     </div>
                     <div class="cert-item">
                         <img src="vault_associate.jpg" alt="Vault Associate Badge" onclick="openLightbox(this.src)">
-                        <h3>HashiCorp Vault Associate (002)</h3>
+                        <h3>HashiCorp Vault Associate</h3>
                     </div>
                     <div class="cert-item">
                         <img src="hashicorp-certified-vault-operations-professional-1.png" alt="Vault Operations Professional Badge" onclick="openLightbox(this.src)">
