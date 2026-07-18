@@ -66,9 +66,7 @@ const translations = {
         "en": `
             <h2 class="section-title">Experience</h2>
             <div class="experience-entry">
-                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)">
-                    <h3>System Engineer <span class="exp-company">@ Adfinis AG</span></h3>
-                    <h4><i class="fas fa-calendar-alt"></i> Jan 2024 – Present &nbsp;·&nbsp; <i class="fas fa-map-marker-alt"></i> Switzerland</h4>
+                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)"><i class="fas fa-chevron-down exp-chevron"></i><div class="experience-title-text"><h3>System Engineer <span class="exp-company">@ Adfinis AG</span></h3><h4><i class="fas fa-calendar-alt"></i> Jan 2024 – Present &nbsp;·&nbsp; <i class="fas fa-map-marker-alt"></i> Switzerland</h4></div>
                 </div>
                 <div class="achievements-list-container" style="display: none;">
                     <p class="tech-stack-label"><strong>Tech Stack:</strong> Kubernetes, OpenShift, AWS, Azure, GCP, Terraform, Ansible, GitLab CI, ArgoCD, HashiCorp Vault, OpenBao, Python, Bash, Linux</p>
@@ -83,9 +81,7 @@ const translations = {
                 </div>
             </div>
             <div class="experience-entry">
-                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)">
-                    <h3>Cloud Infrastructure Engineer <span class="exp-company">@ CERN</span></h3>
-                    <h4><i class="fas fa-calendar-alt"></i> Sept 2021 – Sept 2023 &nbsp;·&nbsp; <i class="fas fa-map-marker-alt"></i> Switzerland</h4>
+                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)"><i class="fas fa-chevron-down exp-chevron"></i><div class="experience-title-text"><h3>Cloud Infrastructure Engineer <span class="exp-company">@ CERN</span></h3><h4><i class="fas fa-calendar-alt"></i> Sept 2021 – Sept 2023 &nbsp;·&nbsp; <i class="fas fa-map-marker-alt"></i> Switzerland</h4></div>
                 </div>
                 <div class="achievements-list-container" style="display: none;">
                     <p class="tech-stack-label"><strong>Tech Stack:</strong> OpenStack, Linux, Python, Bash, Puppet, MySQL, InfluxDB, Prometheus, Grafana, Rundeck, CI/CD</p>
@@ -100,9 +96,7 @@ const translations = {
                 </div>
             </div>
             <div class="experience-entry">
-                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)">
-                    <h3>DevOps / Infrastructure Engineer <span class="exp-company">@ CERN</span></h3>
-                    <h4><i class="fas fa-calendar-alt"></i> July 2018 – July 2021 &nbsp;·&nbsp; <i class="fas fa-map-marker-alt"></i> Switzerland</h4>
+                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)"><i class="fas fa-chevron-down exp-chevron"></i><div class="experience-title-text"><h3>DevOps / Infrastructure Engineer <span class="exp-company">@ CERN</span></h3><h4><i class="fas fa-calendar-alt"></i> July 2018 – July 2021 &nbsp;·&nbsp; <i class="fas fa-map-marker-alt"></i> Switzerland</h4></div>
                 </div>
                 <div class="achievements-list-container" style="display: none;">
                     <p class="tech-stack-label"><strong>Tech Stack:</strong> Linux, Python, Puppet, Ansible, Nomad, Docker, Kubernetes, CI/CD, InfluxDB, Telegraf, Grafana, Filebeat, Logstash</p>
@@ -115,9 +109,7 @@ const translations = {
                 </div>
             </div>
             <div class="experience-entry">
-                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)">
-                    <h3>Web Developer <span class="exp-company">@ Conexiona Telecom</span></h3>
-                    <h4><i class="fas fa-calendar-alt"></i> Feb 2018 – May 2018 &nbsp;·&nbsp; <i class="fas fa-map-marker-alt"></i> Spain &nbsp;·&nbsp; Internship</h4>
+                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)"><i class="fas fa-chevron-down exp-chevron"></i><div class="experience-title-text"><h3>Web Developer <span class="exp-company">@ Conexiona Telecom</span></h3><h4><i class="fas fa-calendar-alt"></i> Feb 2018 – May 2018 &nbsp;·&nbsp; <i class="fas fa-map-marker-alt"></i> Spain &nbsp;·&nbsp; Internship</h4></div>
                 </div>
                 <div class="achievements-list-container" style="display: none;">
                     <ul class="achievements-list">
@@ -126,9 +118,7 @@ const translations = {
                 </div>
             </div>
             <div class="experience-entry">
-                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)">
-                    <h3>System Administrator <span class="exp-company">@ University of Vigo</span></h3>
-                    <h4><i class="fas fa-calendar-alt"></i> Nov 2017 – Mar 2018 &nbsp;·&nbsp; <i class="fas fa-map-marker-alt"></i> Spain &nbsp;·&nbsp; Internship</h4>
+                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)"><i class="fas fa-chevron-down exp-chevron"></i><div class="experience-title-text"><h3>System Administrator <span class="exp-company">@ University of Vigo</span></h3><h4><i class="fas fa-calendar-alt"></i> Nov 2017 – Mar 2018 &nbsp;·&nbsp; <i class="fas fa-map-marker-alt"></i> Spain &nbsp;·&nbsp; Internship</h4></div>
                 </div>
                 <div class="achievements-list-container" style="display: none;">
                     <ul class="achievements-list">
@@ -141,9 +131,7 @@ const translations = {
         "es": `
             <h2 class="section-title">Experiencia</h2>
             <div class="experience-entry">
-                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)">
-                    <h3>Ingeniero de Sistemas <span class="exp-company">@ Adfinis AG</span></h3>
-                    <h4><i class="fas fa-calendar-alt"></i> Ene 2024 – Presente &nbsp;·&nbsp; <i class="fas fa-map-marker-alt"></i> Suiza</h4>
+                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)"><i class="fas fa-chevron-down exp-chevron"></i><div class="experience-title-text"><h3>Ingeniero de Sistemas <span class="exp-company">@ Adfinis AG</span></h3><h4><i class="fas fa-calendar-alt"></i> Ene 2024 – Presente &nbsp;·&nbsp; <i class="fas fa-map-marker-alt"></i> Suiza</h4></div>
                 </div>
                 <div class="achievements-list-container" style="display: none;">
                     <p class="tech-stack-label"><strong>Tecnologías:</strong> Kubernetes, OpenShift, AWS, Azure, GCP, Terraform, Ansible, GitLab CI, ArgoCD, HashiCorp Vault, OpenBao, Python, Bash, Linux</p>
@@ -158,9 +146,7 @@ const translations = {
                 </div>
             </div>
             <div class="experience-entry">
-                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)">
-                    <h3>Ingeniero de Infraestructura Cloud <span class="exp-company">@ CERN</span></h3>
-                    <h4><i class="fas fa-calendar-alt"></i> Sep 2021 – Sep 2023 &nbsp;·&nbsp; <i class="fas fa-map-marker-alt"></i> Suiza</h4>
+                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)"><i class="fas fa-chevron-down exp-chevron"></i><div class="experience-title-text"><h3>Ingeniero de Infraestructura Cloud <span class="exp-company">@ CERN</span></h3><h4><i class="fas fa-calendar-alt"></i> Sep 2021 – Sep 2023 &nbsp;·&nbsp; <i class="fas fa-map-marker-alt"></i> Suiza</h4></div>
                 </div>
                 <div class="achievements-list-container" style="display: none;">
                     <p class="tech-stack-label"><strong>Tecnologías:</strong> OpenStack, Linux, Python, Bash, Puppet, MySQL, InfluxDB, Prometheus, Grafana, Rundeck, CI/CD</p>
@@ -175,9 +161,7 @@ const translations = {
                 </div>
             </div>
             <div class="experience-entry">
-                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)">
-                    <h3>Ingeniero DevOps / Infraestructura <span class="exp-company">@ CERN</span></h3>
-                    <h4><i class="fas fa-calendar-alt"></i> Jul 2018 – Jul 2021 &nbsp;·&nbsp; <i class="fas fa-map-marker-alt"></i> Suiza</h4>
+                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)"><i class="fas fa-chevron-down exp-chevron"></i><div class="experience-title-text"><h3>Ingeniero DevOps / Infraestructura <span class="exp-company">@ CERN</span></h3><h4><i class="fas fa-calendar-alt"></i> Jul 2018 – Jul 2021 &nbsp;·&nbsp; <i class="fas fa-map-marker-alt"></i> Suiza</h4></div>
                 </div>
                 <div class="achievements-list-container" style="display: none;">
                     <p class="tech-stack-label"><strong>Tecnologías:</strong> Linux, Python, Puppet, Ansible, Nomad, Docker, Kubernetes, CI/CD, InfluxDB, Telegraf, Grafana, Filebeat, Logstash</p>
@@ -190,9 +174,7 @@ const translations = {
                 </div>
             </div>
             <div class="experience-entry">
-                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)">
-                    <h3>Desarrollador Web <span class="exp-company">@ Conexiona Telecom</span></h3>
-                    <h4><i class="fas fa-calendar-alt"></i> Feb 2018 – May 2018 &nbsp;·&nbsp; <i class="fas fa-map-marker-alt"></i> España &nbsp;·&nbsp; Prácticas</h4>
+                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)"><i class="fas fa-chevron-down exp-chevron"></i><div class="experience-title-text"><h3>Desarrollador Web <span class="exp-company">@ Conexiona Telecom</span></h3><h4><i class="fas fa-calendar-alt"></i> Feb 2018 – May 2018 &nbsp;·&nbsp; <i class="fas fa-map-marker-alt"></i> España &nbsp;·&nbsp; Prácticas</h4></div>
                 </div>
                 <div class="achievements-list-container" style="display: none;">
                     <ul class="achievements-list">
@@ -201,9 +183,7 @@ const translations = {
                 </div>
             </div>
             <div class="experience-entry">
-                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)">
-                    <h3>Administrador de Sistemas <span class="exp-company">@ Universidad de Vigo</span></h3>
-                    <h4><i class="fas fa-calendar-alt"></i> Nov 2017 – Mar 2018 &nbsp;·&nbsp; <i class="fas fa-map-marker-alt"></i> España &nbsp;·&nbsp; Prácticas</h4>
+                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)"><i class="fas fa-chevron-down exp-chevron"></i><div class="experience-title-text"><h3>Administrador de Sistemas <span class="exp-company">@ Universidad de Vigo</span></h3><h4><i class="fas fa-calendar-alt"></i> Nov 2017 – Mar 2018 &nbsp;·&nbsp; <i class="fas fa-map-marker-alt"></i> España &nbsp;·&nbsp; Prácticas</h4></div>
                 </div>
                 <div class="achievements-list-container" style="display: none;">
                     <ul class="achievements-list">
@@ -216,9 +196,7 @@ const translations = {
         "fr": `
             <h2 class="section-title">Expérience</h2>
             <div class="experience-entry">
-                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)">
-                    <h3>Ingénieur Systèmes <span class="exp-company">@ Adfinis AG</span></h3>
-                    <h4><i class="fas fa-calendar-alt"></i> Jan 2024 – Présent &nbsp;·&nbsp; <i class="fas fa-map-marker-alt"></i> Suisse</h4>
+                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)"><i class="fas fa-chevron-down exp-chevron"></i><div class="experience-title-text"><h3>Ingénieur Systèmes <span class="exp-company">@ Adfinis AG</span></h3><h4><i class="fas fa-calendar-alt"></i> Jan 2024 – Présent &nbsp;·&nbsp; <i class="fas fa-map-marker-alt"></i> Suisse</h4></div>
                 </div>
                 <div class="achievements-list-container" style="display: none;">
                     <p class="tech-stack-label"><strong>Technologies :</strong> Kubernetes, OpenShift, AWS, Azure, GCP, Terraform, Ansible, GitLab CI, ArgoCD, HashiCorp Vault, OpenBao, Python, Bash, Linux</p>
@@ -233,9 +211,7 @@ const translations = {
                 </div>
             </div>
             <div class="experience-entry">
-                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)">
-                    <h3>Ingénieur Infrastructure Cloud <span class="exp-company">@ CERN</span></h3>
-                    <h4><i class="fas fa-calendar-alt"></i> Sep 2021 – Sep 2023 &nbsp;·&nbsp; <i class="fas fa-map-marker-alt"></i> Suisse</h4>
+                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)"><i class="fas fa-chevron-down exp-chevron"></i><div class="experience-title-text"><h3>Ingénieur Infrastructure Cloud <span class="exp-company">@ CERN</span></h3><h4><i class="fas fa-calendar-alt"></i> Sep 2021 – Sep 2023 &nbsp;·&nbsp; <i class="fas fa-map-marker-alt"></i> Suisse</h4></div>
                 </div>
                 <div class="achievements-list-container" style="display: none;">
                     <p class="tech-stack-label"><strong>Technologies :</strong> OpenStack, Linux, Python, Bash, Puppet, MySQL, InfluxDB, Prometheus, Grafana, Rundeck, CI/CD</p>
@@ -250,9 +226,7 @@ const translations = {
                 </div>
             </div>
             <div class="experience-entry">
-                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)">
-                    <h3>Ingénieur DevOps / Infrastructure <span class="exp-company">@ CERN</span></h3>
-                    <h4><i class="fas fa-calendar-alt"></i> Juil 2018 – Juil 2021 &nbsp;·&nbsp; <i class="fas fa-map-marker-alt"></i> Suisse</h4>
+                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)"><i class="fas fa-chevron-down exp-chevron"></i><div class="experience-title-text"><h3>Ingénieur DevOps / Infrastructure <span class="exp-company">@ CERN</span></h3><h4><i class="fas fa-calendar-alt"></i> Juil 2018 – Juil 2021 &nbsp;·&nbsp; <i class="fas fa-map-marker-alt"></i> Suisse</h4></div>
                 </div>
                 <div class="achievements-list-container" style="display: none;">
                     <p class="tech-stack-label"><strong>Technologies :</strong> Linux, Python, Puppet, Ansible, Nomad, Docker, Kubernetes, CI/CD, InfluxDB, Telegraf, Grafana, Filebeat, Logstash</p>
@@ -265,9 +239,7 @@ const translations = {
                 </div>
             </div>
             <div class="experience-entry">
-                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)">
-                    <h3>Développeur Web <span class="exp-company">@ Conexiona Telecom</span></h3>
-                    <h4><i class="fas fa-calendar-alt"></i> Fév 2018 – Mai 2018 &nbsp;·&nbsp; <i class="fas fa-map-marker-alt"></i> Espagne &nbsp;·&nbsp; Stage</h4>
+                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)"><i class="fas fa-chevron-down exp-chevron"></i><div class="experience-title-text"><h3>Développeur Web <span class="exp-company">@ Conexiona Telecom</span></h3><h4><i class="fas fa-calendar-alt"></i> Fév 2018 – Mai 2018 &nbsp;·&nbsp; <i class="fas fa-map-marker-alt"></i> Espagne &nbsp;·&nbsp; Stage</h4></div>
                 </div>
                 <div class="achievements-list-container" style="display: none;">
                     <ul class="achievements-list">
@@ -276,9 +248,7 @@ const translations = {
                 </div>
             </div>
             <div class="experience-entry">
-                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)">
-                    <h3>Administrateur Systèmes <span class="exp-company">@ Université de Vigo</span></h3>
-                    <h4><i class="fas fa-calendar-alt"></i> Nov 2017 – Mar 2018 &nbsp;·&nbsp; <i class="fas fa-map-marker-alt"></i> Espagne &nbsp;·&nbsp; Stage</h4>
+                <div class="experience-title" onclick="toggleVisibility(this.nextElementSibling)"><i class="fas fa-chevron-down exp-chevron"></i><div class="experience-title-text"><h3>Administrateur Systèmes <span class="exp-company">@ Université de Vigo</span></h3><h4><i class="fas fa-calendar-alt"></i> Nov 2017 – Mar 2018 &nbsp;·&nbsp; <i class="fas fa-map-marker-alt"></i> Espagne &nbsp;·&nbsp; Stage</h4></div>
                 </div>
                 <div class="achievements-list-container" style="display: none;">
                     <ul class="achievements-list">
@@ -494,14 +464,12 @@ const translations = {
             <h2 class="section-title">Education</h2>
             <div class="content-section">
                 <div class="education-entry">
-                    <h3>B.S. in Computer Engineering</h3>
+                    <div class="education-entry-body"><h3>B.S. in Computer Engineering</h3>
                     <h4>University of Vigo, Spain · 2020</h4>
-                    <p>Bachelor's thesis: <a href="https://github.com/dominrivera/ESEIMS" target="_blank">ESEI Monitoring System</a></p>
-                </div>
+                    <p>Bachelor's thesis: <a href="https://github.com/dominrivera/ESEIMS" target="_blank">ESEI Monitoring System</a></p></div></div>
                 <div class="education-entry">
-                    <h3>Erasmus Programme, Computer Engineering</h3>
-                    <h4>Bialystok University of Technology, Poland · 2016</h4>
-                </div>
+                    <div class="education-entry-body"><h3>Erasmus Programme, Computer Engineering</h3>
+                    <h4>Bialystok University of Technology, Poland · 2016</h4></div></div>
             </div>
             <h2 class="section-title">Certifications</h2>
             <div class="content-section">
@@ -533,14 +501,12 @@ const translations = {
             <h2 class="section-title">Educación</h2>
             <div class="content-section">
                 <div class="education-entry">
-                    <h3>Grado en Ingeniería Informática</h3>
+                    <div class="education-entry-body"><h3>Grado en Ingeniería Informática</h3>
                     <h4>Universidad de Vigo, España · 2020</h4>
-                    <p>Trabajo de fin de grado: <a href="https://github.com/dominrivera/ESEIMS" target="_blank">Sistema de Monitorización de la ESEI</a></p>
-                </div>
+                    <p>Trabajo de fin de grado: <a href="https://github.com/dominrivera/ESEIMS" target="_blank">Sistema de Monitorización de la ESEI</a></p></div></div>
                 <div class="education-entry">
-                    <h3>Programa Erasmus, Ingeniería Informática</h3>
-                    <h4>Bialystok University of Technology, Polonia · 2016</h4>
-                </div>
+                    <div class="education-entry-body"><h3>Programa Erasmus, Ingeniería Informática</h3>
+                    <h4>Bialystok University of Technology, Polonia · 2016</h4></div></div>
             </div>
             <h2 class="section-title">Certificaciones</h2>
             <div class="content-section">
@@ -572,14 +538,12 @@ const translations = {
             <h2 class="section-title">Éducation</h2>
             <div class="content-section">
                 <div class="education-entry">
-                    <h3>Licence en Ingénierie Informatique</h3>
+                    <div class="education-entry-body"><h3>Licence en Ingénierie Informatique</h3>
                     <h4>Université de Vigo, Espagne · 2020</h4>
-                    <p>Thèse de licence : <a href="https://github.com/dominrivera/ESEIMS" target="_blank">Système de Surveillance ESEI</a></p>
-                </div>
+                    <p>Thèse de licence : <a href="https://github.com/dominrivera/ESEIMS" target="_blank">Système de Surveillance ESEI</a></p></div></div>
                 <div class="education-entry">
-                    <h3>Programme Erasmus, Ingénierie Informatique</h3>
-                    <h4>Université de Technologie de Bialystok, Pologne · 2016</h4>
-                </div>
+                    <div class="education-entry-body"><h3>Programme Erasmus, Ingénierie Informatique</h3>
+                    <h4>Université de Technologie de Bialystok, Pologne · 2016</h4></div></div>
             </div>
             <h2 class="section-title">Certifications</h2>
             <div class="content-section">
@@ -695,6 +659,8 @@ function onLightboxKey(e) {
 function toggleVisibility(element) {
     const isHidden = element.style.display === 'none' || element.style.display === '';
     element.style.display = isHidden ? 'block' : 'none';
+    const chevron = element.previousElementSibling?.querySelector('.exp-chevron');
+    if (chevron) chevron.classList.toggle('open', isHidden);
 }
 
 // Initial render
