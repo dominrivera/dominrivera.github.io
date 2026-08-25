@@ -1,0 +1,207 @@
+/* Photo click — gravity letters + icons: eat then blast back */
+
+.card-img.photo-egg-armed {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+}
+
+.card-img.photo-egg-eating {
+    position: relative;
+    z-index: 6;
+    animation: photoEggPulse 0.45s ease-out;
+}
+
+.card-img.photo-egg-blast {
+    position: relative;
+    z-index: 6;
+    animation: photoEggBlastPulse 0.55s ease-out;
+}
+
+@keyframes photoEggPulse {
+    0%, 100% { transform: scale(1); filter: brightness(1); }
+    50% { transform: scale(1.08); filter: brightness(1.15); }
+}
+
+@keyframes photoEggBlastPulse {
+    0% { transform: scale(1); filter: brightness(1); }
+    30% { transform: scale(1.14); filter: brightness(1.25); }
+    55% { transform: scale(0.94); }
+    100% { transform: scale(1); filter: brightness(1); }
+}
+
+body.photo-egg-busy .sidebar,
+body.photo-egg-busy .card-links {
+    pointer-events: none;
+}
+
+/* Card + sidebar crumple into photo */
+.photo-egg-shell {
+    will-change: transform, opacity;
+    transform-origin: var(--egg-ox, 50%) var(--egg-oy, 20%);
+}
+
+.photo-egg-shell.photo-egg-shell-eating {
+    transition:
+        transform 0.7s cubic-bezier(0.55, 0.05, 0.35, 1),
+        opacity 0.55s ease,
+        border-radius 0.7s ease,
+        box-shadow 0.5s ease;
+    transform: scale(0.04) rotate(-12deg);
+    opacity: 0;
+    border-radius: 50%;
+    box-shadow: 0 0 0 transparent;
+    overflow: hidden;
+}
+
+.sidebar.photo-egg-shell-eating {
+    transform: scale(0.04) rotate(14deg);
+}
+
+.photo-egg-shell.photo-egg-shell-launch {
+    transition: none;
+    animation: photoEggShellBlastBack 0.75s cubic-bezier(0.22, 1.35, 0.36, 1) both;
+}
+
+.sidebar.photo-egg-shell-launch {
+    animation-name: photoEggSidebarBlastBack;
+}
+
+@keyframes photoEggShellBlastBack {
+    0% {
+        opacity: 0;
+        transform: scale(0.04) rotate(-12deg);
+        border-radius: 50%;
+    }
+    45% {
+        opacity: 1;
+        transform: scale(1.08) rotate(4deg);
+        border-radius: 24px;
+    }
+    70% {
+        transform: scale(0.96) rotate(-2deg);
+        border-radius: 20px;
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+        border-radius: 20px;
+    }
+}
+
+@keyframes photoEggSidebarBlastBack {
+    0% {
+        opacity: 0;
+        transform: scale(0.04) rotate(14deg);
+        border-radius: 50%;
+    }
+    45% {
+        opacity: 1;
+        transform: scale(1.1) rotate(-5deg);
+        border-radius: 22px;
+    }
+    70% {
+        transform: scale(0.96) rotate(2deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+        border-radius: 18px;
+    }
+}
+
+.photo-egg-fly {
+    display: inline-block;
+    will-change: transform, opacity;
+    transition:
+        transform 0.75s cubic-bezier(0.45, 0.05, 0.25, 1),
+        opacity 0.55s ease;
+}
+
+.photo-egg-fly.photo-egg-icon {
+    position: relative;
+    z-index: 5;
+}
+
+body.photo-egg-phase-eat .photo-egg-fly {
+    transform:
+        translate(var(--egg-dx, 0), var(--egg-dy, 0))
+        rotate(var(--egg-rot, 0deg))
+        scale(0.15);
+    opacity: 0;
+}
+
+body.photo-egg-phase-launch .photo-egg-fly {
+    transition: none;
+    opacity: 1;
+    animation-name: photoEggBlastBack;
+    animation-duration: var(--egg-launch-dur, 0.95s);
+    animation-delay: var(--egg-launch-delay, 0ms);
+    animation-timing-function: cubic-bezier(0.2, 0.85, 0.25, 1);
+    animation-fill-mode: both;
+}
+
+@keyframes photoEggBlastBack {
+    0% {
+        opacity: 0;
+        transform:
+            translate(var(--egg-dx), var(--egg-dy))
+            rotate(var(--egg-rot, -20deg))
+            scale(0.12);
+        filter: blur(2px);
+    }
+    18% {
+        opacity: 1;
+        filter: blur(0);
+        transform:
+            translate(
+                calc(var(--egg-dx) * 0.55),
+                calc(var(--egg-dy) * 0.55)
+            )
+            rotate(calc(var(--egg-spin, 120deg) * 0.35))
+            scale(0.7);
+    }
+    42% {
+        transform:
+            translate(var(--egg-over-x), var(--egg-over-y))
+            rotate(var(--egg-spin, 120deg))
+            scale(1.28);
+    }
+    62% {
+        transform:
+            translate(var(--egg-bounce-x, 0px), var(--egg-bounce-y, 0px))
+            rotate(calc(var(--egg-spin, 120deg) * -0.15))
+            scale(0.9);
+    }
+    80% {
+        transform: translate(0, 0) rotate(3deg) scale(1.08);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0);
+        transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .card-img.photo-egg-eating,
+    .card-img.photo-egg-blast {
+        animation: none;
+    }
+
+    .photo-egg-fly {
+        transition-duration: 0.35s !important;
+    }
+
+    .photo-egg-shell.photo-egg-shell-eating {
+        transition-duration: 0.35s !important;
+    }
+
+    .photo-egg-shell.photo-egg-shell-launch {
+        animation-duration: 0.45s !important;
+    }
+
+    body.photo-egg-phase-launch .photo-egg-fly {
+        animation-duration: 0.45s !important;
+    }
+}
