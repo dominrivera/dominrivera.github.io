@@ -1,0 +1,85 @@
+/* ── Skills Matrix rain easter egg ── */
+
+#matrix-rain-layer {
+    position: fixed;
+    inset: 0;
+    z-index: 2500;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.matrix-drop {
+    position: absolute;
+    top: -10vh;
+    font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.4px;
+    white-space: nowrap;
+    color: #7dd3a7;
+    text-shadow:
+        0 0 8px rgba(125, 211, 167, 0.55),
+        0 0 18px rgba(79, 163, 200, 0.25);
+    opacity: 0;
+    will-change: transform, opacity;
+    animation-name: matrixFall;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.matrix-drop.alt {
+    color: #8fbcbb;
+    text-shadow:
+        0 0 8px rgba(143, 188, 187, 0.5),
+        0 0 16px rgba(137, 180, 250, 0.2);
+}
+
+.matrix-drop.hot {
+    color: #a6e3a1;
+    font-size: 14px;
+    text-shadow:
+        0 0 10px rgba(166, 227, 161, 0.7),
+        0 0 22px rgba(166, 227, 161, 0.35);
+}
+
+@keyframes matrixFall {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 0, 0) rotate(0deg);
+    }
+    8% {
+        opacity: 0.95;
+    }
+    75% {
+        opacity: 0.85;
+    }
+    100% {
+        opacity: 0;
+        transform: translate3d(var(--matrix-drift, 0px), 110vh, 0) rotate(var(--matrix-rot, 0deg));
+    }
+}
+
+#matrix-rain-flash {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at center, rgba(166, 227, 161, 0.12), transparent 65%);
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+
+#matrix-rain-flash.on {
+    opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .matrix-drop {
+        animation-name: matrixFade;
+        top: 20vh;
+    }
+
+    @keyframes matrixFade {
+        0% { opacity: 0; transform: scale(0.96); }
+        20% { opacity: 0.9; transform: scale(1); }
+        100% { opacity: 0; transform: scale(1.02); }
+    }
+}
