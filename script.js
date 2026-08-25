@@ -672,10 +672,4 @@ document.addEventListener('DOMContentLoaded', () => {
     // Set active sidebar icon
     const firstIcon = document.querySelector('.menu-item[data-section="personal"]');
     if (firstIcon) firstIcon.classList.add('active');
-
-    // Day/night background
-    const hour = new Date().getHours();
-    document.body.style.background = (hour >= 8 && hour < 22)
-        ? 'linear-gradient(135deg, #65a6c0 0%, #4a8ba5 100%)'
-        : 'linear-gradient(135deg, #28505f 0%, #1a3a47 100%)';
 });
